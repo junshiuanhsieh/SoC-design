@@ -45,10 +45,9 @@ module fir
     input   wire [(pDATA_WIDTH-1):0] data_Do,
 
     input   wire                     axis_clk,
-    input   wire                     axis_rst_n,
-    output  wire test
+    input   wire                     axis_rst_n
 );
-assign test = arready_w;
+
 parameter IDLE  = 0;
 parameter READ  = 1;
 parameter CAL   = 2;
