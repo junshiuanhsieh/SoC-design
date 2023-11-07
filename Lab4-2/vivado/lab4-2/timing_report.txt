@@ -1,0 +1,2492 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Mon Nov  6 22:16:07 2023
+| Host         : ubuntu2004 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 -file /home/ubuntu/SoC/lab4-2/vivado/lab4-2/timing_report.txt
+| Design       : user_project_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.672        0.000                      0                 2070        0.075        0.000                      0                 2070        3.750        0.000                       0                   651  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock     Waveform(ns)       Period(ns)      Frequency(MHz)
+-----     ------------       ----------      --------------
+wb_clk_i  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+wb_clk_i            0.672        0.000                      0                 1559        0.075        0.000                      0                 1559        3.750        0.000                       0                   651  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  wb_clk_i           wb_clk_i                 7.752        0.000                      0                  511        1.298        0.000                      0                  511  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  wb_clk_i
+  To Clock:  wb_clk_i
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.672ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.075ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_1/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[11]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_1/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_1/DOBDO[3]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[11]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[11]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[11]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[11]
+                                                                      r  wbs_dat_o_OBUF[11]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[11]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[11]
+                                                                      r  wbs_dat_o[11] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_1/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[13]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_1/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[5])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_1/DOBDO[5]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[13]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[13]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[13]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[13]
+                                                                      r  wbs_dat_o_OBUF[13]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[13]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[13]
+                                                                      r  wbs_dat_o[13] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_1/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[15]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_1/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[7])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_1/DOBDO[7]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[15]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[15]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[15]
+                                                                      r  wbs_dat_o_OBUF[15]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[15]
+                                                                      r  wbs_dat_o[15] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[17]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_2/DOBDO[1]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[17]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[17]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[17]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[17]
+                                                                      r  wbs_dat_o_OBUF[17]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[17]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[17]
+                                                                      r  wbs_dat_o[17] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[19]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_2/DOBDO[3]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[19]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[19]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[19]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[19]
+                                                                      r  wbs_dat_o_OBUF[19]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[19]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[19]
+                                                                      r  wbs_dat_o[19] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[1]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_0/DOBDO[1]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[1]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[1]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[1]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[1]
+                                                                      r  wbs_dat_o_OBUF[1]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[1]
+                                                                      r  wbs_dat_o[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[21]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[5])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_2/DOBDO[5]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[21]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[21]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[21]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[21]
+                                                                      r  wbs_dat_o_OBUF[21]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[21]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[21]
+                                                                      r  wbs_dat_o[21] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_2/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[23]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_2/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[7])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_2/DOBDO[7]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[23]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[23]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[23]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[23]
+                                                                      r  wbs_dat_o_OBUF[23]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[23]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[23]
+                                                                      r  wbs_dat_o[23] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_3/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[25]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_3/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[1])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_3/DOBDO[1]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[25]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[25]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[25]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[25]
+                                                                      r  wbs_dat_o_OBUF[25]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[25]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[25]
+                                                                      r  wbs_dat_o[25] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+Slack (MET) :             0.672ns  (required time - arrival time)
+  Source:                 mprj/user_bram/RAM_reg_3/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wbs_dat_o[27]
+                            (output port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        6.836ns  (logic 5.236ns (76.603%)  route 1.599ns (23.397%))
+  Logic Levels:           2  (LUT3=1 OBUF=1)
+  Output Delay:           0.000ns
+  Clock Path Skew:        -2.456ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.456ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    mprj/user_bram/wb_clk_i_IBUF_BUFG
+                         RAMB36E1                                     r  mprj/user_bram/RAM_reg_3/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     4.910 r  mprj/user_bram/RAM_reg_3/DOBDO[3]
+                         net (fo=1, unplaced)         0.800     5.710    mprj/user_bram/wbs_dat_mprj[27]
+                                                                      r  mprj/user_bram/wbs_dat_o_OBUF[27]_inst_i_1/I0
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.858 r  mprj/user_bram/wbs_dat_o_OBUF[27]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     6.658    wbs_dat_o_OBUF[27]
+                                                                      r  wbs_dat_o_OBUF[27]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.292 r  wbs_dat_o_OBUF[27]_inst/O
+                         net (fo=0)                   0.000     9.292    wbs_dat_o[27]
+                                                                      r  wbs_dat_o[27] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.035     9.965    
+                         output delay                -0.000     9.965    
+  -------------------------------------------------------------------
+                         required time                          9.965    
+                         arrival time                          -9.292    
+  -------------------------------------------------------------------
+                         slack                                  0.672    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_0_0/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[0]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_0_0/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_0_0/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_0_0/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_0_0/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_0_0/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[10]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_10_10/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[10]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_10_10/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_10_10/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_10_10/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_10_10/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_10_10/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[11]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_11_11/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[11]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_11_11/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_11_11/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_11_11/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_11_11/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_11_11/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[12]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_12_12/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[12]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_12_12/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_12_12/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_12_12/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_12_12/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_12_12/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[13]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_13_13/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[13]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_13_13/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_13_13/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_13_13/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_13_13/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_13_13/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[14]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_14_14/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[14]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_14_14/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_14_14/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_14_14/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_14_14/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_14_14/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_15_15/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[15]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_15_15/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_15_15/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_15_15/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_15_15/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_15_15/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[16]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_16_16/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[16]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_16_16/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_16_16/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_16_16/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_16_16/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_16_16/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[17]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_17_17/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[17]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[17]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_17_17/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_17_17/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_17_17/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_17_17/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_17_17/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 wb_to_axi/inst_fir/tap_Di_r_reg[18]/C
+                            (rising edge-triggered cell FDCE clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/tap_ram/RAM_reg_0_15_18_18/SP/I
+                            (rising edge-triggered cell RAMS32 clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             wb_clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.147ns (51.079%)  route 0.141ns (48.921%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114     0.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/inst_fir/tap_Di_r_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.825 r  wb_to_axi/inst_fir/tap_Di_r_reg[18]/Q
+                         net (fo=1, unplaced)         0.141     0.965    wb_to_axi/tap_ram/RAM_reg_0_15_18_18/D
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_18_18/SP/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.259     1.032    wb_to_axi/tap_ram/RAM_reg_0_15_18_18/WCLK
+                         RAMS32                                       r  wb_to_axi/tap_ram/RAM_reg_0_15_18_18/SP/CLK
+                         clock pessimism             -0.210     0.823    
+                         RAMS32 (Hold_rams32_CLK_I)
+                                                      0.068     0.891    wb_to_axi/tap_ram/RAM_reg_0_15_18_18/SP
+  -------------------------------------------------------------------
+                         required time                         -0.891    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         wb_clk_i
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { wb_clk_i }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         10.000      7.056                mprj/user_bram/RAM_reg_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         10.000      7.056                mprj/user_bram/RAM_reg_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         10.000      7.056                mprj/user_bram/RAM_reg_2/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         10.000      7.056                mprj/user_bram/RAM_reg_3/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424                mprj/user_bram/RAM_reg_0/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424                mprj/user_bram/RAM_reg_1/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424                mprj/user_bram/RAM_reg_2/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424                mprj/user_bram/RAM_reg_3/CLKBWRCLK
+Min Period        n/a     BUFG/I              n/a            2.155         10.000      7.845                wb_clk_i_IBUF_BUFG_inst/I
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846                wb_to_axi/inst_fir/product_r0/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_0_0/SP/CLK
+Low Pulse Width   Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_0_0/SP/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_10_10/SP/CLK
+Low Pulse Width   Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_10_10/SP/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_11_11/SP/CLK
+Low Pulse Width   Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_11_11/SP/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_12_12/SP/CLK
+Low Pulse Width   Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_12_12/SP/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_13_13/SP/CLK
+Low Pulse Width   Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_13_13/SP/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_0_0/SP/CLK
+High Pulse Width  Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_0_0/SP/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_10_10/SP/CLK
+High Pulse Width  Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_10_10/SP/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_11_11/SP/CLK
+High Pulse Width  Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_11_11/SP/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_12_12/SP/CLK
+High Pulse Width  Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_12_12/SP/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_13_13/SP/CLK
+High Pulse Width  Fast    RAMS32/CLK          n/a            1.250         5.000       3.750                wb_to_axi/data_ram/RAM_reg_0_15_13_13/SP/CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  wb_clk_i
+  To Clock:  wb_clk_i
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.752ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        1.298ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.752ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_alw_state_r_reg[0]/PRE
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_to_axi/AR[0]
+                         FDPE                                         f  wb_to_axi/FSM_onehot_alw_state_r_reg[0]/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDPE                                         r  wb_to_axi/FSM_onehot_alw_state_r_reg[0]/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDPE (Recov_fdpe_C_PRE)     -0.146    10.496    wb_to_axi/FSM_onehot_alw_state_r_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.496    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.752    
+
+Slack (MET) :             7.752ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_asr_state_r_reg[0]/PRE
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_to_axi/AR[0]
+                         FDPE                                         f  wb_to_axi/FSM_onehot_asr_state_r_reg[0]/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDPE                                         r  wb_to_axi/FSM_onehot_asr_state_r_reg[0]/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDPE (Recov_fdpe_C_PRE)     -0.146    10.496    wb_to_axi/FSM_onehot_asr_state_r_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.496    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.752    
+
+Slack (MET) :             7.752ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_asw_state_r_reg[0]/PRE
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_to_axi/AR[0]
+                         FDPE                                         f  wb_to_axi/FSM_onehot_asw_state_r_reg[0]/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDPE                                         r  wb_to_axi/FSM_onehot_asw_state_r_reg[0]/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDPE (Recov_fdpe_C_PRE)     -0.146    10.496    wb_to_axi/FSM_onehot_asw_state_r_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.496    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.752    
+
+Slack (MET) :             7.752ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/inst_fir/FSM_onehot_state_r_reg[0]/PRE
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_to_axi/inst_fir/AR[0]
+                         FDPE                                         f  wb_to_axi/inst_fir/FSM_onehot_state_r_reg[0]/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_to_axi/inst_fir/wb_clk_i_IBUF_BUFG
+                         FDPE                                         r  wb_to_axi/inst_fir/FSM_onehot_state_r_reg[0]/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDPE (Recov_fdpe_C_PRE)     -0.146    10.496    wb_to_axi/inst_fir/FSM_onehot_state_r_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.496    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.752    
+
+Slack (MET) :             7.778ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            product_r0_carry_i_7/CLR
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_rst_i_IBUF
+                         FDCE                                         f  product_r0_carry_i_7/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  product_r0_carry_i_7/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDCE (Recov_fdce_C_CLR)     -0.120    10.522    product_r0_carry_i_7
+  -------------------------------------------------------------------
+                         required time                         10.522    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.778    
+
+Slack (MET) :             7.778ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_alw_state_r_reg[1]/CLR
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_alw_state_r_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_alw_state_r_reg[1]/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDCE (Recov_fdce_C_CLR)     -0.120    10.522    wb_to_axi/FSM_onehot_alw_state_r_reg[1]
+  -------------------------------------------------------------------
+                         required time                         10.522    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.778    
+
+Slack (MET) :             7.778ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_alw_state_r_reg[2]/CLR
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_alw_state_r_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_alw_state_r_reg[2]/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDCE (Recov_fdce_C_CLR)     -0.120    10.522    wb_to_axi/FSM_onehot_alw_state_r_reg[2]
+  -------------------------------------------------------------------
+                         required time                         10.522    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.778    
+
+Slack (MET) :             7.778ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_asr_state_r_reg[1]/CLR
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_asr_state_r_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_asr_state_r_reg[1]/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDCE (Recov_fdce_C_CLR)     -0.120    10.522    wb_to_axi/FSM_onehot_asr_state_r_reg[1]
+  -------------------------------------------------------------------
+                         required time                         10.522    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.778    
+
+Slack (MET) :             7.778ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_asr_state_r_reg[2]/CLR
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_asr_state_r_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_asr_state_r_reg[2]/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDCE (Recov_fdce_C_CLR)     -0.120    10.522    wb_to_axi/FSM_onehot_asr_state_r_reg[2]
+  -------------------------------------------------------------------
+                         required time                         10.522    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.778    
+
+Slack (MET) :             7.778ns  (required time - arrival time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_asw_state_r_reg[1]/CLR
+                            (recovery check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Fast Process Corner)
+  Requirement:            10.000ns  (wb_clk_i rise@10.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        0.744ns  (logic 0.389ns (52.320%)  route 0.355ns (47.680%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        0.678ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.678ns = ( 10.678 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     2.389 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.355     2.744    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_asw_state_r_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                     10.000    10.000 r  
+                                                      0.000    10.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000    10.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200    10.200 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    10.538    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026    10.564 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.114    10.678    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_asw_state_r_reg[1]/C
+                         clock pessimism              0.000    10.678    
+                         clock uncertainty           -0.035    10.642    
+                         FDCE (Recov_fdce_C_CLR)     -0.120    10.522    wb_to_axi/FSM_onehot_asw_state_r_reg[1]
+  -------------------------------------------------------------------
+                         required time                         10.522    
+                         arrival time                          -2.744    
+  -------------------------------------------------------------------
+                         slack                                  7.778    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            product_r0_carry_i_7/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_rst_i_IBUF
+                         FDCE                                         f  product_r0_carry_i_7/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  product_r0_carry_i_7/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    product_r0_carry_i_7
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_alw_state_r_reg[1]/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_alw_state_r_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_alw_state_r_reg[1]/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    wb_to_axi/FSM_onehot_alw_state_r_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_alw_state_r_reg[2]/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_alw_state_r_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_alw_state_r_reg[2]/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    wb_to_axi/FSM_onehot_alw_state_r_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_asr_state_r_reg[1]/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_asr_state_r_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_asr_state_r_reg[1]/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    wb_to_axi/FSM_onehot_asr_state_r_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_asr_state_r_reg[2]/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_asr_state_r_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_asr_state_r_reg[2]/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    wb_to_axi/FSM_onehot_asr_state_r_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_asw_state_r_reg[1]/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_asw_state_r_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_asw_state_r_reg[1]/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    wb_to_axi/FSM_onehot_asw_state_r_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_onehot_asw_state_r_reg[2]/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_onehot_asw_state_r_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_onehot_asw_state_r_reg[2]/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    wb_to_axi/FSM_onehot_asw_state_r_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_sequential_alr_state_r_reg[0]/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_sequential_alr_state_r_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_sequential_alr_state_r_reg[0]/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    wb_to_axi/FSM_sequential_alr_state_r_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/FSM_sequential_alr_state_r_reg[1]/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/FSM_sequential_alr_state_r_reg[1]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/FSM_sequential_alr_state_r_reg[1]/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    wb_to_axi/FSM_sequential_alr_state_r_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+Slack (MET) :             1.298ns  (arrival time - required time)
+  Source:                 wb_rst_i
+                            (input port clocked by wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            wb_to_axi/alr_ack_o_r_reg/CLR
+                            (removal check against rising-edge clock wb_clk_i  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Slow Process Corner)
+  Requirement:            0.000ns  (wb_clk_i rise@0.000ns - wb_clk_i rise@0.000ns)
+  Data Path Delay:        1.598ns  (logic 0.838ns (52.451%)  route 0.760ns (47.549%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        2.456ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.456ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  2.000     2.000    
+                                                      0.000     2.000 f  wb_rst_i (IN)
+                         net (fo=0)                   0.000     2.000    wb_rst_i
+                                                                      f  wb_rst_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.838     2.838 f  wb_rst_i_IBUF_inst/O
+                         net (fo=512, unplaced)       0.760     3.598    wb_to_axi/AR[0]
+                         FDCE                                         f  wb_to_axi/alr_ack_o_r_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock wb_clk_i rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  wb_clk_i (IN)
+                         net (fo=0)                   0.000     0.000    wb_clk_i
+                                                                      r  wb_clk_i_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     0.972 r  wb_clk_i_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.771    wb_clk_i_IBUF
+                                                                      r  wb_clk_i_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.101     1.872 r  wb_clk_i_IBUF_BUFG_inst/O
+                         net (fo=650, unplaced)       0.584     2.456    wb_to_axi/wb_clk_i_IBUF_BUFG
+                         FDCE                                         r  wb_to_axi/alr_ack_o_r_reg/C
+                         clock pessimism              0.000     2.456    
+                         clock uncertainty            0.035     2.492    
+                         FDCE (Remov_fdce_C_CLR)     -0.192     2.300    wb_to_axi/alr_ack_o_r_reg
+  -------------------------------------------------------------------
+                         required time                         -2.300    
+                         arrival time                           3.598    
+  -------------------------------------------------------------------
+                         slack                                  1.298    
+
+
+
+
+

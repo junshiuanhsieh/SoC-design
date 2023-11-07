@@ -1,0 +1,625 @@
+
+*** Running vivado
+    with args -log user_project_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_project_wrapper.tcl
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source user_project_wrapper.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/ubuntu/SoC/lab4-2/vivado/lab4-2/lab4-2.srcs/utils_1/imports/synth_1/user_project_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ubuntu/SoC/lab4-2/vivado/lab4-2/lab4-2.srcs/utils_1/imports/synth_1/user_project_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top user_project_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 650271
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/SoC/lab4-2/rtl/user/fir.v:51]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/SoC/lab4-2/rtl/user/fir.v:52]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/SoC/lab4-2/rtl/user/fir.v:53]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'io_in' is not allowed [/home/ubuntu/SoC/lab4-2/rtl/user/user_proj_example.counter.v:76]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'io_out' is not allowed [/home/ubuntu/SoC/lab4-2/rtl/user/user_proj_example.counter.v:77]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'io_oeb' is not allowed [/home/ubuntu/SoC/lab4-2/rtl/user/user_proj_example.counter.v:78]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2897.145 ; gain = 0.000 ; free physical = 124 ; free virtual = 3625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'user_project_wrapper' [/home/ubuntu/SoC/lab4-2/rtl/user/user_project_wrapper.v:35]
+INFO: [Synth 8-6157] synthesizing module 'user_proj_example' [/home/ubuntu/SoC/lab4-2/rtl/user/user_proj_example.counter.v:41]
+INFO: [Synth 8-6157] synthesizing module 'bram' [/home/ubuntu/SoC/lab4-2/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bram' (0#1) [/home/ubuntu/SoC/lab4-2/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'user_proj_example' (0#1) [/home/ubuntu/SoC/lab4-2/rtl/user/user_proj_example.counter.v:41]
+INFO: [Synth 8-6157] synthesizing module 'wb_to_axi' [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bram11' [/home/ubuntu/SoC/lab4-2/rtl/user/bram11.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bram11' (0#1) [/home/ubuntu/SoC/lab4-2/rtl/user/bram11.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fir' [/home/ubuntu/SoC/lab4-2/rtl/user/fir.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab4-2/rtl/user/fir.v:167]
+INFO: [Synth 8-6155] done synthesizing module 'fir' (0#1) [/home/ubuntu/SoC/lab4-2/rtl/user/fir.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:159]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:202]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:246]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:282]
+INFO: [Synth 8-6155] done synthesizing module 'wb_to_axi' (0#1) [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'user_project_wrapper' (0#1) [/home/ubuntu/SoC/lab4-2/rtl/user/user_project_wrapper.v:35]
+WARNING: [Synth 8-3848] Net la_data_out in module/entity user_proj_example does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/user_proj_example.counter.v:64]
+WARNING: [Synth 8-3848] Net io_out in module/entity user_proj_example does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/user_proj_example.counter.v:69]
+WARNING: [Synth 8-3848] Net io_oeb in module/entity user_proj_example does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/user_proj_example.counter.v:70]
+WARNING: [Synth 8-3848] Net irq in module/entity user_proj_example does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/user_proj_example.counter.v:73]
+WARNING: [Synth 8-3848] Net la_data_out in module/entity wb_to_axi does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:15]
+WARNING: [Synth 8-3848] Net io_out in module/entity wb_to_axi does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:18]
+WARNING: [Synth 8-3848] Net io_oeb in module/entity wb_to_axi does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:19]
+WARNING: [Synth 8-3848] Net irq in module/entity wb_to_axi does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/wb_to_axi.v:20]
+WARNING: [Synth 8-3848] Net la_data_out in module/entity user_project_wrapper does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/user_project_wrapper.v:63]
+WARNING: [Synth 8-3848] Net io_out in module/entity user_project_wrapper does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/user_project_wrapper.v:68]
+WARNING: [Synth 8-3848] Net io_oeb in module/entity user_project_wrapper does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/user_project_wrapper.v:69]
+WARNING: [Synth 8-3848] Net user_irq in module/entity user_project_wrapper does not have driver. [/home/ubuntu/SoC/lab4-2/rtl/user/user_project_wrapper.v:81]
+WARNING: [Synth 8-7129] Port awaddr[11] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awaddr[10] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awaddr[9] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awaddr[8] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awaddr[7] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[11] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[10] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[9] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[8] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[7] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ss_tlast in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[127] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[126] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[125] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[124] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[123] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[122] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[121] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[120] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[119] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[118] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[117] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[116] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[115] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[114] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[113] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[112] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[111] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[110] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[109] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[108] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[107] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[106] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[105] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[104] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[103] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[102] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[101] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[100] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[99] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[98] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[97] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[96] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[95] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[94] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[93] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[92] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[91] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[90] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[89] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[88] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[87] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[86] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[85] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[84] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[83] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[82] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[81] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[80] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[79] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[78] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[77] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[76] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[75] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[74] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[73] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[72] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[71] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[70] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[69] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[68] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[67] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[66] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[65] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[64] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[63] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[62] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[61] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[60] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[59] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[58] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[57] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[56] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[55] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[54] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[53] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[52] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[51] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[50] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[49] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[48] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[47] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[46] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[45] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[44] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[43] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[42] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[41] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[40] in module wb_to_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[39] in module wb_to_axi is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2897.145 ; gain = 0.000 ; free physical = 1231 ; free virtual = 4660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2897.145 ; gain = 0.000 ; free physical = 1204 ; free virtual = 4633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2897.145 ; gain = 0.000 ; free physical = 1204 ; free virtual = 4633
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2897.145 ; gain = 0.000 ; free physical = 1242 ; free virtual = 4671
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/SoC/lab4-2/vivado/lab4-2/lab4-2.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'wb_clk_i' relative to clock 'wb_clk_i' defined on the same pin is not supported, ignoring it [/home/ubuntu/SoC/lab4-2/vivado/lab4-2/lab4-2.srcs/constrs_1/new/constraint.xdc:2]
+Finished Parsing XDC File [/home/ubuntu/SoC/lab4-2/vivado/lab4-2/lab4-2.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2913.152 ; gain = 0.000 ; free physical = 1167 ; free virtual = 4596
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2913.152 ; gain = 0.000 ; free physical = 1167 ; free virtual = 4596
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1217 ; free virtual = 4646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1217 ; free virtual = 4646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1217 ; free virtual = 4646
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_r_reg' in module 'fir'
+INFO: [Synth 8-802] inferred FSM for state register 'alr_state_r_reg' in module 'wb_to_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'alw_state_r_reg' in module 'wb_to_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'asw_state_r_reg' in module 'wb_to_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'asr_state_r_reg' in module 'wb_to_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                     CAL |                              010 |                               01
+                    DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_r_reg' using encoding 'one-hot' in module 'fir'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ALR_IDLE |                               00 |                             0000
+                ALR_ADDR |                               01 |                             0001
+                ALR_DATA |                               10 |                             0010
+                ALR_WAIT |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alr_state_r_reg' using encoding 'sequential' in module 'wb_to_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ASW_IDLE |                              001 |                             0000
+                ASW_SEND |                              010 |                             0001
+                ASW_WAIT |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'asw_state_r_reg' using encoding 'one-hot' in module 'wb_to_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ASR_IDLE |                              001 |                             0000
+                ASR_DATA |                              010 |                             0001
+                ASR_WAIT |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'asr_state_r_reg' using encoding 'one-hot' in module 'wb_to_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ALW_IDLE |                              001 |                             0000
+                ALW_SEND |                              010 |                             0001
+                ALW_WAIT |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alw_state_r_reg' using encoding 'one-hot' in module 'wb_to_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1216 ; free virtual = 4646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 15    
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 33    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
+	              352 Bit	(11 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 3     
+	   3 Input   12 Bit        Muxes := 1     
+	   3 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 5     
+	   3 Input    6 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 21    
+	   3 Input    1 Bit        Muxes := 23    
+	   4 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP wb_to_axi/inst_fir/product_r0, operation Mode is: A*B.
+DSP Report: operator wb_to_axi/inst_fir/product_r0 is absorbed into DSP wb_to_axi/inst_fir/product_r0.
+DSP Report: operator wb_to_axi/inst_fir/product_r0 is absorbed into DSP wb_to_axi/inst_fir/product_r0.
+DSP Report: Generating DSP wb_to_axi/inst_fir/product_r0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator wb_to_axi/inst_fir/product_r0 is absorbed into DSP wb_to_axi/inst_fir/product_r0.
+DSP Report: operator wb_to_axi/inst_fir/product_r0 is absorbed into DSP wb_to_axi/inst_fir/product_r0.
+DSP Report: Generating DSP wb_to_axi/inst_fir/product_r0, operation Mode is: A*B.
+DSP Report: operator wb_to_axi/inst_fir/product_r0 is absorbed into DSP wb_to_axi/inst_fir/product_r0.
+DSP Report: operator wb_to_axi/inst_fir/product_r0 is absorbed into DSP wb_to_axi/inst_fir/product_r0.
+DSP Report: Generating DSP wb_to_axi/inst_fir/product_r0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator wb_to_axi/inst_fir/product_r0 is absorbed into DSP wb_to_axi/inst_fir/product_r0.
+DSP Report: operator wb_to_axi/inst_fir/product_r0 is absorbed into DSP wb_to_axi/inst_fir/product_r0.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[47]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[46]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[45]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[44]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[43]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[42]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[41]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[40]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[39]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[38]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[37]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[36]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[35]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[34]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[33]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[32]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[31]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[30]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[29]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[28]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[27]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[26]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[25]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[24]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[23]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[22]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[21]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[20]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[19]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[18]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[17]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[16]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[15]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[47]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[46]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[45]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[44]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[43]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[42]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[41]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[40]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[39]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[38]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[37]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[36]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[35]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[34]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[33]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[32]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[31]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[30]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[29]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[28]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[27]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[26]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[25]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[24]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[23]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[22]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[21]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[20]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[19]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[18]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[17]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[16]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[15]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[14]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[13]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[12]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[11]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[10]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[9]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[8]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[7]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[6]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[5]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[4]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[3]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[2]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[1]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[0]__0) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[47]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[46]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[45]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[44]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[43]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[42]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[41]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[40]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[39]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[38]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[37]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[36]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[35]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[34]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[33]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[32]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[31]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[30]__1) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (wb_to_axi/inst_fir/product_r_reg[29]__1) is unused and will be removed from module user_project_wrapper.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1185 ; free virtual = 4620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|user_project_wrapper | mprj/user_bram/RAM_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------+----------------------------+-----------+----------------------+----------------+
+|Module Name          | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++---------------------+----------------------------+-----------+----------------------+----------------+
+|user_project_wrapper | wb_to_axi/tap_ram/RAM_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|user_project_wrapper | wb_to_axi/data_ram/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
++---------------------+----------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|user_project_wrapper | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1056 ; free virtual = 4491
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1054 ; free virtual = 4489
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|user_project_wrapper | mprj/user_bram/RAM_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++---------------------+----------------------------+-----------+----------------------+----------------+
+|Module Name          | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++---------------------+----------------------------+-----------+----------------------+----------------+
+|user_project_wrapper | wb_to_axi/tap_ram/RAM_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|user_project_wrapper | wb_to_axi/data_ram/RAM_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
++---------------------+----------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mprj/user_bram/RAM_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mprj/user_bram/RAM_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mprj/user_bram/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mprj/user_bram/RAM_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1037 ; free virtual = 4472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1037 ; free virtual = 4472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1037 ; free virtual = 4472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1037 ; free virtual = 4472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1037 ; free virtual = 4472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1037 ; free virtual = 4472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1037 ; free virtual = 4472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|user_project_wrapper | (A*B)'          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|user_project_wrapper | A*B             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17+A*B)' | 0      | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    24|
+|3     |DSP48E1  |     3|
+|5     |LUT1     |    18|
+|6     |LUT2     |   106|
+|7     |LUT3     |   175|
+|8     |LUT4     |    31|
+|9     |LUT5     |    22|
+|10    |LUT6     |    63|
+|11    |MUXF7    |     2|
+|12    |RAM16X1S |    64|
+|13    |RAMB36E1 |     4|
+|14    |FDCE     |   507|
+|15    |FDPE     |     4|
+|16    |FDRE     |    65|
+|17    |IBUF     |    65|
+|18    |OBUF     |    33|
+|19    |OBUFT    |   207|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2913.152 ; gain = 16.008 ; free physical = 1037 ; free virtual = 4472
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 685 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2913.152 ; gain = 0.000 ; free physical = 1099 ; free virtual = 4534
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2913.160 ; gain = 16.008 ; free physical = 1099 ; free virtual = 4534
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2913.160 ; gain = 0.000 ; free physical = 1196 ; free virtual = 4630
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2913.160 ; gain = 0.000 ; free physical = 1145 ; free virtual = 4580
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+
+Synth Design complete, checksum: 60679d4c
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 220 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 2913.160 ; gain = 16.016 ; free physical = 1348 ; free virtual = 4783
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC/lab4-2/vivado/lab4-2/lab4-2.runs/synth_1/user_project_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file user_project_wrapper_utilization_synth.rpt -pb user_project_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  6 22:15:32 2023...
