@@ -1,0 +1,60 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Oct 26 09:48:14 2023
+[*]
+[dumpfile] "/home/ubuntu/SoC/lab4-1/testbench/counter_la_fir/counter_la_fir.vcd"
+[dumpfile_mtime] "Thu Oct 26 09:46:22 2023"
+[dumpfile_size] 253166773
+[savefile] "/home/ubuntu/SoC/lab4-1/testbench/counter_la_fir/waveform.gtkw"
+[timestart] 5969730000
+[size] 1848 903
+[pos] -1 -1
+*-19.403090 5971437500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] counter_la_fir_tb.
+[treeopen] counter_la_fir_tb.uut.
+[treeopen] counter_la_fir_tb.uut.mprj.
+[treeopen] counter_la_fir_tb.uut.mprj.mprj.
+[sst_width] 292
+[signals_width] 404
+[sst_expanded] 1
+[sst_vpaned_height] 315
+@200
+-#counter_la_tb
+@28
+counter_la_fir_tb.RSTB
+counter_la_fir_tb.clock
+@22
+counter_la_fir_tb.mprj_io[37:0]
+@420
+counter_la_fir_tb.checkbits[15:0]
+@200
+-
+-#uut(caravel)
+-
+-#soc
+-
+-
+-#VexRiscV
+-
+-mprj
+@29
+counter_la_fir_tb.uut.mprj.mprj.ready
+@200
+-
+-User Bram
+@28
+counter_la_fir_tb.uut.mprj.mprj.user_bram.CLK
+counter_la_fir_tb.uut.mprj.mprj.user_bram.EN0
+@22
+counter_la_fir_tb.uut.mprj.mprj.user_bram.WE0[3:0]
+counter_la_fir_tb.uut.mprj.mprj.user_bram.Di0[31:0]
+counter_la_fir_tb.uut.mprj.mprj.user_bram.Do0[31:0]
+counter_la_fir_tb.uut.mprj.mprj.user_bram.A0[31:0]
+@200
+-
+-RAM256
+-
+-
+-
+[pattern_trace] 1
+[pattern_trace] 0
