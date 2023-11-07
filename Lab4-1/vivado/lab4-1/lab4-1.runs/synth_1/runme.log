@@ -1,0 +1,372 @@
+
+*** Running vivado
+    with args -log user_project_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_project_wrapper.tcl
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source user_project_wrapper.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/ubuntu/SoC/lab4-1/vivado/lab4-1/lab4-1.srcs/utils_1/imports/synth_1/user_project_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ubuntu/SoC/lab4-1/vivado/lab4-1/lab4-1.srcs/utils_1/imports/synth_1/user_project_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top user_project_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 704031
+WARNING: [Synth 8-9971] redeclaration of ansi port 'io_in' is not allowed [/home/ubuntu/SoC/lab4-1/rtl/user/user_proj_example.counter.v:80]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'io_out' is not allowed [/home/ubuntu/SoC/lab4-1/rtl/user/user_proj_example.counter.v:81]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'io_oeb' is not allowed [/home/ubuntu/SoC/lab4-1/rtl/user/user_proj_example.counter.v:82]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3117.922 ; gain = 0.000 ; free physical = 188 ; free virtual = 2397
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'user_project_wrapper' [/home/ubuntu/SoC/lab4-1/rtl/user/user_project_wrapper.v:32]
+INFO: [Synth 8-6157] synthesizing module 'user_proj_example' [/home/ubuntu/SoC/lab4-1/rtl/user/user_proj_example.counter.v:45]
+INFO: [Synth 8-6157] synthesizing module 'bram' [/home/ubuntu/SoC/lab4-1/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bram' (0#1) [/home/ubuntu/SoC/lab4-1/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'user_proj_example' (0#1) [/home/ubuntu/SoC/lab4-1/rtl/user/user_proj_example.counter.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'user_project_wrapper' (0#1) [/home/ubuntu/SoC/lab4-1/rtl/user/user_project_wrapper.v:32]
+WARNING: [Synth 8-3848] Net la_data_out in module/entity user_proj_example does not have driver. [/home/ubuntu/SoC/lab4-1/rtl/user/user_proj_example.counter.v:68]
+WARNING: [Synth 8-3848] Net io_out in module/entity user_proj_example does not have driver. [/home/ubuntu/SoC/lab4-1/rtl/user/user_proj_example.counter.v:73]
+WARNING: [Synth 8-3848] Net io_oeb in module/entity user_proj_example does not have driver. [/home/ubuntu/SoC/lab4-1/rtl/user/user_proj_example.counter.v:74]
+WARNING: [Synth 8-3848] Net irq in module/entity user_proj_example does not have driver. [/home/ubuntu/SoC/lab4-1/rtl/user/user_proj_example.counter.v:77]
+WARNING: [Synth 8-7129] Port A0[31] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[30] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[29] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[28] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[27] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[26] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[25] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[24] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[23] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[22] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[21] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[20] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[19] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[18] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[17] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[16] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[15] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[14] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[13] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[12] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[127] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[126] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[125] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[124] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[123] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[122] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[121] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[120] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[119] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[118] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[117] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[116] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[115] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[114] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[113] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[112] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[111] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[110] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[109] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[108] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[107] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[106] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[105] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[104] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[103] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[102] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[101] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[100] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[99] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[98] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[97] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[96] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[95] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[94] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[93] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[92] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[91] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[90] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[89] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[88] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[87] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[86] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[85] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[84] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[83] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[82] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[81] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[80] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[79] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[78] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[77] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[76] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[75] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[74] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[73] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[72] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[71] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[70] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[69] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[68] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[67] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[66] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[65] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[64] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[63] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[62] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[61] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[60] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[59] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[58] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[57] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[56] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[55] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[54] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[53] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[52] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[51] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[50] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[49] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[48] in module user_proj_example is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3117.922 ; gain = 0.000 ; free physical = 259 ; free virtual = 2449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3117.922 ; gain = 0.000 ; free physical = 259 ; free virtual = 2449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3117.922 ; gain = 0.000 ; free physical = 259 ; free virtual = 2449
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3117.922 ; gain = 0.000 ; free physical = 259 ; free virtual = 2449
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/SoC/lab4-1/vivado/lab4-1/lab4-1.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'wb_clk_i' relative to clock 'wb_clk_i' defined on the same pin is not supported, ignoring it [/home/ubuntu/SoC/lab4-1/vivado/lab4-1/lab4-1.srcs/constrs_1/new/constraint.xdc:2]
+Finished Parsing XDC File [/home/ubuntu/SoC/lab4-1/vivado/lab4-1/lab4-1.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3133.930 ; gain = 0.000 ; free physical = 1194 ; free virtual = 3385
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3133.930 ; gain = 0.000 ; free physical = 1194 ; free virtual = 3385
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1244 ; free virtual = 3435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1244 ; free virtual = 3435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1244 ; free virtual = 3435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1244 ; free virtual = 3435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1226 ; free virtual = 3421
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|user_project_wrapper | mprj/user_bram/RAM_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1115 ; free virtual = 3317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1101 ; free virtual = 3302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|user_project_wrapper | mprj/user_bram/RAM_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mprj/user_bram/RAM_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mprj/user_bram/RAM_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mprj/user_bram/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mprj/user_bram/RAM_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1100 ; free virtual = 3302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1100 ; free virtual = 3301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1100 ; free virtual = 3301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1100 ; free virtual = 3301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1100 ; free virtual = 3301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1100 ; free virtual = 3301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1100 ; free virtual = 3301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     4|
+|3     |LUT2     |    20|
+|4     |LUT4     |     8|
+|5     |LUT6     |     4|
+|6     |RAMB36E1 |     4|
+|7     |FDRE     |    17|
+|8     |IBUF     |    65|
+|9     |OBUF     |    33|
+|10    |OBUFT    |   207|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3133.930 ; gain = 16.008 ; free physical = 1100 ; free virtual = 3301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 540 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3133.930 ; gain = 0.000 ; free physical = 1148 ; free virtual = 3350
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3133.938 ; gain = 16.008 ; free physical = 1148 ; free virtual = 3350
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3133.938 ; gain = 0.000 ; free physical = 1148 ; free virtual = 3349
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3133.938 ; gain = 0.000 ; free physical = 1188 ; free virtual = 3389
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 843044b5
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 3133.938 ; gain = 150.047 ; free physical = 1370 ; free virtual = 3572
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC/lab4-1/vivado/lab4-1/lab4-1.runs/synth_1/user_project_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file user_project_wrapper_utilization_synth.rpt -pb user_project_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  7 04:43:29 2023...
