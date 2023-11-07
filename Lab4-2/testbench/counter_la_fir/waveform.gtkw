@@ -1,0 +1,89 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Nov  7 06:34:09 2023
+[*]
+[dumpfile] "/home/ubuntu/SoC/lab4-2/testbench/counter_la_fir/counter_la_fir.vcd"
+[dumpfile_mtime] "Tue Nov  7 06:32:50 2023"
+[dumpfile_size] 617707525
+[savefile] "/home/ubuntu/SoC/lab4-2/testbench/counter_la_fir/waveform.gtkw"
+[timestart] 1627000000
+[size] 1848 903
+[pos] -1 -1
+*-24.619390 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] counter_la_fir_tb.
+[treeopen] counter_la_fir_tb.uut.
+[treeopen] counter_la_fir_tb.uut.mprj.
+[treeopen] counter_la_fir_tb.uut.mprj.mprj.
+[treeopen] counter_la_fir_tb.uut.mprj.wb_to_axi.
+[treeopen] counter_la_fir_tb.uut.soc.
+[treeopen] counter_la_fir_tb.uut.soc.core.
+[sst_width] 292
+[signals_width] 249
+[sst_expanded] 1
+[sst_vpaned_height] 285
+@28
+counter_la_fir_tb.clock
+@22
+counter_la_fir_tb.latency_timer[31:0]
+@200
+-#counter_la_tb
+@22
+counter_la_fir_tb.checkbits[15:0]
+counter_la_fir_tb.mprj_io[37:0]
+@200
+-
+-#uut(caravel)
+@22
+counter_la_fir_tb.mprj_io[37:0]
+@420
+counter_la_fir_tb.checkbits[15:0]
+@200
+-
+-#soc
+-mprj
+@28
+counter_la_fir_tb.uut.mprj.wbs_cyc_i
+counter_la_fir_tb.uut.mprj.wbs_stb_i
+@22
+counter_la_fir_tb.uut.mprj.wbs_adr_i[31:0]
+counter_la_fir_tb.uut.mprj.wbs_dat_i[31:0]
+counter_la_fir_tb.uut.mprj.wbs_dat_o[31:0]
+@28
+counter_la_fir_tb.uut.mprj.wbs_we_i
+@22
+counter_la_fir_tb.uut.mprj.wbs_sel_i[3:0]
+@28
+counter_la_fir_tb.uut.mprj.wbs_ack_o
+@200
+-
+@28
+counter_la_fir_tb.uut.mprj.wbs_ack_fir
+counter_la_fir_tb.uut.mprj.wb_to_axi.wbs_cyc_i
+@200
+-
+-User Bram
+@22
+counter_la_fir_tb.uut.mprj.mprj.user_bram.A0[31:0]
+counter_la_fir_tb.uut.mprj.mprj.user_bram.Di0[31:0]
+counter_la_fir_tb.uut.mprj.mprj.user_bram.Do0[31:0]
+@28
+counter_la_fir_tb.uut.mprj.mprj.user_bram.EN0
+@22
+counter_la_fir_tb.uut.mprj.mprj.user_bram.WE0[3:0]
+@200
+-
+-RAM256
+-
+@22
+counter_la_fir_tb.uut.mprj.wb_to_axi.tap_ram.wdi[31:0]
+counter_la_fir_tb.uut.mprj.wb_to_axi.tap_ram.raddr[11:0]
+counter_la_fir_tb.uut.mprj.wb_to_axi.tap_ram.waddr[11:0]
+@420
+counter_la_fir_tb.uut.mprj.wb_to_axi.tap_ram.rdo[31:0]
+@28
+counter_la_fir_tb.uut.mprj.wb_to_axi.tap_ram.we
+counter_la_fir_tb.uut.mprj.wb_to_axi.tap_ram.re
+@200
+-
+[pattern_trace] 1
+[pattern_trace] 0
