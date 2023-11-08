@@ -1631,7 +1631,7 @@ int* __attribute__ ( ( section ( ".mprjram" ) ) ) fir() {
             tap_addr++;
         }
     }
-
+    (*(volatile uint32_t*)0x2600000c) = 0xAB410000;
     for(int j=0; j<3; j=j+1) {
  while(!((*(volatile uint32_t*)0x30000000) & 0b100)) continue;
  (*(volatile uint32_t*)0x30000000) = 1;

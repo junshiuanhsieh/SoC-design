@@ -174,6 +174,12 @@ fir:
 .L6:
 .LBE3:
 .LBE2:
+	.loc 2 29 6
+	li	a5,637534208
+	addi	a5,a5,12
+	.loc 2 29 39
+	li	a4,-1421803520
+	sw	a4,0(a5)
 .LBB4:
 	.loc 2 30 13
 	sw	zero,-28(s0)

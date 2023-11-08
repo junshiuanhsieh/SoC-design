@@ -26,7 +26,7 @@ int* __attribute__ ( ( section ( ".mprjram" ) ) ) fir() {
             tap_addr++;
         }
     }
-        
+    reg_mprj_datal = 0xAB410000;
     for(int j=0; j<3; j=j+1) {
 	while(!(AP & 0b100)) continue;
 	AP = 1; // ap_start

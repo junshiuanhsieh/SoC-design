@@ -170,6 +170,7 @@ module counter_la_fir_tb;
 		
 		wait(checkbits == 16'hAB40);
 		$display("LA Test 1 started");
+		wait(checkbits == 16'hAB41);
 		latency_timer = 0;
 		
 		for(o=0; o<3; o=o+1) begin
