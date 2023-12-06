@@ -3,17 +3,17 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Dec  6 02:22:54 2023">
+<application name="pa" timeStamp="Wed Dec  6 12:35:04 2023">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="4c667149102b4b73971ec5b4735159a4" type="ProjectID"/>
-<property name="ProjectIteration" value="2" type="ProjectIteration"/>
+<property name="ProjectID" value="df24c6c25d7744e1abfc1cb658c8925d" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
 <property name="SrcSetCount" value="1" type="SrcSetCount"/>
 <property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
 <property name="DesignMode" value="RTL" type="DesignMode"/>
-<property name="SynthesisStrategy" value="Flow_RuntimeOptimized" type="SynthesisStrategy"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
 <property name="ImplStrategy" value="Performance_NetDelay_high" type="ImplStrategy"/>
 </item>
 </section>

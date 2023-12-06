@@ -103,7 +103,7 @@ module tbuart (
 			R_GET_DATA:	begin
 				recv_pattern <= {ser_rx, recv_pattern[7:1]};
 				$display("rx data bit index %d: %b", rx_index, ser_rx);
-				$display("time = %0t", $time);
+				//$display("time = %0t", $time);
 			end
 			default: recv_pattern <= 0;
 		endcase
@@ -113,7 +113,7 @@ module tbuart (
 		if(recv_state==R_STOP_BIT)begin
 			recv_buf_data <= {recv_buf_data, recv_pattern};
 			$display("recevied word %d", recv_pattern);
-			$display("time = %0t", $time);
+			//$display("time = %0t", $time);
 		end
 	end
 	
@@ -173,7 +173,7 @@ module tbuart (
 			T_SEND_DATA:begin 
 				ser_tx <= tx_pattern[tx_index];
 				$display("tx data bit index %d: %b", tx_index, tx_pattern[tx_index]);
-				$display("time = %0t", $time);
+				//$display("time = %0t", $time);
 			end
 			T_STOP_BIT: ser_tx <= 1;
 			T_CLEAR: ser_tx <= 1;
