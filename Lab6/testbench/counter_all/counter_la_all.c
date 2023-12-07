@@ -141,19 +141,31 @@ void main()
 			break;
 		}
 	}*/
+	
+	#ifdef USER_PROJ_IRQ0_EN	
+	// unmask USER_IRQ_0_INTERRUPT
+	mask = irq_getmask();
+	mask |= 1 << USER_IRQ_0_INTERRUPT; // USER_IRQ_0_INTERRUPT = 2
+	irq_setmask(mask);
+	// enable user_irq_0_ev_enable
+	user_irq_0_ev_enable_write(1);	
+	#endif
 
+	reg_mprj_datal = 0xAB500000;
 	int* tmp = fir();
 	
 	for(int i = 0; i < 11; i++){
 	    reg_mprj_datal = *(tmp+i) << 16;
 	}
 	
+	reg_mprj_datal = 0xAB600000;
 	tmp = matmul();
 	
 	for(int i = 0; i < 4; i++){
 	    reg_mprj_datal = *(tmp+i) << 16;
 	}
 	
+	reg_mprj_datal = 0xAB700000;
 	tmp = qsort();
 	
 	for(int i = 0; i < 10; i++){
@@ -173,13 +185,6 @@ void main()
 	//print("Monitor: Test 1 Passed\n\n");	// Makes simulation very long!
 	reg_mprj_datal = 0xAB510000;
 
-#ifdef USER_PROJ_IRQ0_EN	
-	// unmask USER_IRQ_0_INTERRUPT
-	mask = irq_getmask();
-	mask |= 1 << USER_IRQ_0_INTERRUPT; // USER_IRQ_0_INTERRUPT = 2
-	irq_setmask(mask);
-	// enable user_irq_0_ev_enable
-	user_irq_0_ev_enable_write(1);	
-#endif
+
 }
 

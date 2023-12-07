@@ -2,19 +2,19 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Dec  6 12:36:57 2023
-# Process ID: 7257
-# Current directory: /home/ubuntu/github/SoC-design/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1
+# Start of session at: Thu Dec  7 03:06:54 2023
+# Process ID: 12853
+# Current directory: /home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1
 # Command line: vivado -log design_1_caravel_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_caravel_0_0.tcl
-# Log file: /home/ubuntu/github/SoC-design/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1/design_1_caravel_0_0.vds
-# Journal file: /home/ubuntu/github/SoC-design/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1/vivado.jou
+# Log file: /home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1/design_1_caravel_0_0.vds
+# Journal file: /home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1/vivado.jou
 # Running On: ubuntu2004, OS: Linux, CPU Frequency: 2112.002 MHz, CPU Physical cores: 2, Host memory: 10425 MB
 #-----------------------------------------------------------
 source design_1_caravel_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/github/SoC-design/Lab6/vivado/vitis_prj/hls_caravel_ps'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/github/SoC-design/Lab6/vivado/vitis_prj/hls_output_pin'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/github/SoC-design/Lab6/vivado/vitis_prj/hls_read_romcode'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC/lab6/Lab6/vivado/vitis_prj/hls_caravel_ps'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC/lab6/Lab6/vivado/vitis_prj/hls_output_pin'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC/lab6/Lab6/vivado/vitis_prj/hls_read_romcode'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
 Command: synth_design -top design_1_caravel_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -23,228 +23,228 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7267
-WARNING: [Synth 8-9971] redeclaration of ansi port 'io_in' is not allowed [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:75]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'io_out' is not allowed [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:76]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'io_oeb' is not allowed [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:77]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'ready' is not allowed [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:186]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'count' is not allowed [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:187]
-WARNING: [Synth 8-9971] redeclaration of ansi port 'rdata' is not allowed [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:188]
+INFO: [Synth 8-7075] Helper process launched with PID 12864
+WARNING: [Synth 8-9971] redeclaration of ansi port 'io_in' is not allowed [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:75]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'io_out' is not allowed [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:76]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'io_oeb' is not allowed [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:77]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'ready' is not allowed [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:186]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'count' is not allowed [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:187]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'rdata' is not allowed [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:188]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 1025 ; free virtual = 4150
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 289 ; free virtual = 3860
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_caravel_0_0' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_caravel_0_0/synth/design_1_caravel_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'caravel' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:77]
-INFO: [Synth 8-6157] synthesizing module 'chip_io' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:59]
-INFO: [Synth 8-6157] synthesizing module 'mprj_io' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:68]
-INFO: [Synth 8-6157] synthesizing module 'boledu_io' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'boledu_io' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'mprj_io' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:68]
-WARNING: [Synth 8-7071] port 'vdda' of module 'mprj_io' is unconnected for instance 'mprj_pads' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
-WARNING: [Synth 8-7071] port 'vssa' of module 'mprj_io' is unconnected for instance 'mprj_pads' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
-WARNING: [Synth 8-7071] port 'io_in_3v3' of module 'mprj_io' is unconnected for instance 'mprj_pads' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
-WARNING: [Synth 8-7071] port 'analog_noesd_io' of module 'mprj_io' is unconnected for instance 'mprj_pads' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
-WARNING: [Synth 8-7023] instance 'mprj_pads' of module 'mprj_io' has 33 connections declared, but only 29 given [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
-INFO: [Synth 8-6155] done synthesizing module 'chip_io' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:59]
-WARNING: [Synth 8-6104] Input port 'flash_io1' has an internal driver [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:371]
-WARNING: [Synth 8-7071] port 'mprj_io_in' of module 'chip_io' is unconnected for instance 'padframe' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:360]
-WARNING: [Synth 8-7023] instance 'padframe' of module 'chip_io' has 44 connections declared, but only 43 given [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:360]
-INFO: [Synth 8-6157] synthesizing module 'mgmt_core_wrapper' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v:38]
-INFO: [Synth 8-6157] synthesizing module 'mgmt_core' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:4]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:1888]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:6809]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:6825]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7136]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7181]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7204]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7216]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7228]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7261]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7273]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7317]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7410]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7422]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7434]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7482]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7537]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7579]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7591]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7632]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7673]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7714]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7755]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7796]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7837]
-INFO: [Synth 8-6157] synthesizing module 'RAM256' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/vip/RAM256.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'RAM256' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/vip/RAM256.v:1]
-INFO: [Synth 8-6157] synthesizing module 'RAM128' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/vip/RAM128.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'RAM128' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/vip/RAM128.v:1]
-INFO: [Synth 8-6157] synthesizing module 'VexRiscv' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:46]
-INFO: [Synth 8-6157] synthesizing module 'InstructionCache' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4305]
-INFO: [Synth 8-6155] done synthesizing module 'InstructionCache' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4305]
-INFO: [Synth 8-6155] done synthesizing module 'VexRiscv' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:46]
-INFO: [Synth 8-6155] done synthesizing module 'mgmt_core' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'mgmt_core_wrapper' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v:38]
-INFO: [Synth 8-6157] synthesizing module 'user_project_wrapper' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_wrapper_all.v:32]
-INFO: [Synth 8-6157] synthesizing module 'user_proj_example' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:38]
-INFO: [Synth 8-6157] synthesizing module 'bram' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/bram.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'bram' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/bram.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'user_proj_example' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:38]
-INFO: [Synth 8-6157] synthesizing module 'uart' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart.v:1]
-INFO: [Synth 8-6157] synthesizing module 'uart_receive' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_rx.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'uart_receive' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_rx.v:1]
-INFO: [Synth 8-6157] synthesizing module 'uart_transmission' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_tx.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'uart_transmission' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_tx.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ctrl' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'ctrl' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'user_project_wrapper' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_wrapper_all.v:32]
-INFO: [Synth 8-6157] synthesizing module 'housekeeping' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:99]
-INFO: [Synth 8-6157] synthesizing module 'boledu_fd_sc_hd__clkbuf_8' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:1503]
-INFO: [Synth 8-6155] done synthesizing module 'boledu_fd_sc_hd__clkbuf_8' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:1503]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:714]
-INFO: [Synth 8-6157] synthesizing module 'housekeeping_spi' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping_spi.v:75]
-INFO: [Synth 8-6155] done synthesizing module 'housekeeping_spi' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping_spi.v:75]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:1152]
-INFO: [Synth 8-6155] done synthesizing module 'housekeeping' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:99]
-INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
-INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block__parameterized0' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block__parameterized0' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
-INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block__parameterized1' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block__parameterized1' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
-INFO: [Synth 8-6157] synthesizing module 'gpio_control_block' [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:98]
-INFO: [Synth 8-6155] done synthesizing module 'gpio_control_block' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:98]
-INFO: [Synth 8-6155] done synthesizing module 'caravel' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:77]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_caravel_0_0' (0#1) [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_caravel_0_0/synth/design_1_caravel_0_0.v:53]
-WARNING: [Synth 8-3848] Net io_in_3v3 in module/entity mprj_io does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:104]
-WARNING: [Synth 8-3848] Net vddio_q in module/entity chip_io does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:122]
-WARNING: [Synth 8-3848] Net vssio_q in module/entity chip_io does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:122]
-WARNING: [Synth 8-3848] Net analog_a in module/entity chip_io does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:121]
-WARNING: [Synth 8-3848] Net analog_b in module/entity chip_io does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:121]
-WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_isIoAccess_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4586]
-WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowRead_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4588]
-WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowWrite_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4589]
-WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_bypassTranslation_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4593]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_fetchPc_correctionReg_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2357]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_2_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2465]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_3_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2466]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_4_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2467]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_rspCounter_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3673]
-WARNING: [Synth 8-6014] Unused sequential element execute_CsrPlugin_wfiWake_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3693]
-WARNING: [Synth 8-6014] Unused sequential element HazardSimplePlugin_writeBackBuffer_payload_data_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3978]
-WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_mcycle_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3982]
-WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_minstret_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3984]
-WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_FORMAL_PC_NEXT_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1969]
-WARNING: [Synth 8-6014] Unused sequential element execute_to_memory_FORMAL_PC_NEXT_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1968]
-WARNING: [Synth 8-6014] Unused sequential element memory_to_writeBack_FORMAL_PC_NEXT_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1967]
-WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_BYPASSABLE_EXECUTE_STAGE_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1988]
-WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_BYPASSABLE_MEMORY_STAGE_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1957]
-WARNING: [Synth 8-6014] Unused sequential element execute_to_memory_BYPASSABLE_MEMORY_STAGE_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1991]
-WARNING: [Synth 8-6014] Unused sequential element memory_to_writeBack_MEMORY_STORE_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2036]
-WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_CSR_READ_OPCODE_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1974]
-WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_mtvec_mode_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4203]
-WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_firstCycle_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4221]
-WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_secondCycle_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4225]
-WARNING: [Synth 8-3936] Found unconnected internal register 'memory_to_writeBack_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2096]
-WARNING: [Synth 8-3848] Net IBusCachedPlugin_cache_io_cpu_fetch_isRemoved in module/entity VexRiscv does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:92]
-WARNING: [Synth 8-3848] Net IBusCachedPlugin_mmuBus_rsp_bypassTranslation in module/entity VexRiscv does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:490]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_tx_fifo_source_first_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:2869]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_tx_fifo_source_last_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:2870]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_rx_fifo_source_first_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:6905]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_rx_fifo_source_last_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:6906]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_scratch_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7200]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_bus_errors_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7201]
-WARNING: [Synth 8-6014] Unused sequential element debug_mode_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7213]
-WARNING: [Synth 8-6014] Unused sequential element debug_oeb_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7225]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_litespimmap_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7249]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_cs_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7253]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_phyconfig_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7257]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7258]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_litespisdrphycore_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7270]
-WARNING: [Synth 8-6014] Unused sequential element gpio_mode1_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7297]
-WARNING: [Synth 8-6014] Unused sequential element gpio_mode0_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7301]
-WARNING: [Synth 8-6014] Unused sequential element gpio_ien_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7305]
-WARNING: [Synth 8-6014] Unused sequential element gpio_oe_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7309]
-WARNING: [Synth 8-6014] Unused sequential element gpio_in_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7310]
-WARNING: [Synth 8-6014] Unused sequential element gpio_out_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7314]
-WARNING: [Synth 8-6014] Unused sequential element la_ien_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7380]
-WARNING: [Synth 8-6014] Unused sequential element la_oe_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7393]
-WARNING: [Synth 8-6014] Unused sequential element la_in_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7394]
-WARNING: [Synth 8-6014] Unused sequential element la_out_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7407]
-WARNING: [Synth 8-6014] Unused sequential element mprj_wb_iena_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7419]
-WARNING: [Synth 8-6014] Unused sequential element spi_enabled_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7431]
-WARNING: [Synth 8-6014] Unused sequential element spi_master_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7462]
-WARNING: [Synth 8-6014] Unused sequential element spi_master_mosi_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7466]
-WARNING: [Synth 8-6014] Unused sequential element spi_master_miso_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7467]
-WARNING: [Synth 8-6014] Unused sequential element spi_master_cs_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7471]
-WARNING: [Synth 8-6014] Unused sequential element spi_master_loopback_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7475]
-WARNING: [Synth 8-6014] Unused sequential element spimaster_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7479]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_load_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7512]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_reload_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7516]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_en_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7520]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_value_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7525]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7526]
-WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_enable_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7534]
-WARNING: [Synth 8-6014] Unused sequential element uart_txfull_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7564]
-WARNING: [Synth 8-6014] Unused sequential element uart_rxempty_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7565]
-WARNING: [Synth 8-6014] Unused sequential element uart_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7566]
-WARNING: [Synth 8-6014] Unused sequential element uart_enable_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7574]
-WARNING: [Synth 8-6014] Unused sequential element uart_txempty_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7575]
-WARNING: [Synth 8-6014] Unused sequential element uart_rxfull_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7576]
-WARNING: [Synth 8-6014] Unused sequential element uart_enabled_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7588]
-WARNING: [Synth 8-6014] Unused sequential element gpioin0_in_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7612]
-WARNING: [Synth 8-6014] Unused sequential element gpioin0_gpioin0_mode_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7616]
-WARNING: [Synth 8-6014] Unused sequential element gpioin0_gpioin0_edge_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7620]
-WARNING: [Synth 8-6014] Unused sequential element gpioin0_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7621]
-WARNING: [Synth 8-6014] Unused sequential element gpioin0_enable_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7629]
-WARNING: [Synth 8-6014] Unused sequential element gpioin1_in_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7653]
-WARNING: [Synth 8-6014] Unused sequential element gpioin1_gpioin1_mode_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7657]
-WARNING: [Synth 8-6014] Unused sequential element gpioin1_gpioin1_edge_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7661]
-WARNING: [Synth 8-6014] Unused sequential element gpioin1_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7662]
-WARNING: [Synth 8-6014] Unused sequential element gpioin1_enable_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7670]
-WARNING: [Synth 8-6014] Unused sequential element gpioin2_in_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7694]
-WARNING: [Synth 8-6014] Unused sequential element gpioin2_gpioin2_mode_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7698]
-WARNING: [Synth 8-6014] Unused sequential element gpioin2_gpioin2_edge_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7702]
-WARNING: [Synth 8-6014] Unused sequential element gpioin2_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7703]
-WARNING: [Synth 8-6014] Unused sequential element gpioin2_enable_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7711]
-WARNING: [Synth 8-6014] Unused sequential element gpioin3_in_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7735]
-WARNING: [Synth 8-6014] Unused sequential element gpioin3_gpioin3_mode_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7739]
-WARNING: [Synth 8-6014] Unused sequential element gpioin3_gpioin3_edge_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7743]
-WARNING: [Synth 8-6014] Unused sequential element gpioin3_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7744]
-WARNING: [Synth 8-6014] Unused sequential element gpioin3_enable_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7752]
-WARNING: [Synth 8-6014] Unused sequential element gpioin4_in_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7776]
-WARNING: [Synth 8-6014] Unused sequential element gpioin4_gpioin4_mode_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7780]
-WARNING: [Synth 8-6014] Unused sequential element gpioin4_gpioin4_edge_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7784]
-WARNING: [Synth 8-6014] Unused sequential element gpioin4_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7785]
-WARNING: [Synth 8-6014] Unused sequential element gpioin4_enable_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7793]
-WARNING: [Synth 8-6014] Unused sequential element gpioin5_in_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7817]
-WARNING: [Synth 8-6014] Unused sequential element gpioin5_gpioin5_mode_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7821]
-WARNING: [Synth 8-6014] Unused sequential element gpioin5_gpioin5_edge_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7825]
-WARNING: [Synth 8-6014] Unused sequential element gpioin5_status_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7826]
-WARNING: [Synth 8-6014] Unused sequential element gpioin5_enable_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7834]
-WARNING: [Synth 8-6014] Unused sequential element user_irq_ena_re_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7846]
-WARNING: [Synth 8-6014] Unused sequential element memdat_reg was removed.  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:8398]
+INFO: [Synth 8-6157] synthesizing module 'design_1_caravel_0_0' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_caravel_0_0/synth/design_1_caravel_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'caravel' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:77]
+INFO: [Synth 8-6157] synthesizing module 'chip_io' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:59]
+INFO: [Synth 8-6157] synthesizing module 'mprj_io' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:68]
+INFO: [Synth 8-6157] synthesizing module 'boledu_io' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'boledu_io' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'mprj_io' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:68]
+WARNING: [Synth 8-7071] port 'vdda' of module 'mprj_io' is unconnected for instance 'mprj_pads' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
+WARNING: [Synth 8-7071] port 'vssa' of module 'mprj_io' is unconnected for instance 'mprj_pads' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
+WARNING: [Synth 8-7071] port 'io_in_3v3' of module 'mprj_io' is unconnected for instance 'mprj_pads' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
+WARNING: [Synth 8-7071] port 'analog_noesd_io' of module 'mprj_io' is unconnected for instance 'mprj_pads' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
+WARNING: [Synth 8-7023] instance 'mprj_pads' of module 'mprj_io' has 33 connections declared, but only 29 given [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'chip_io' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:59]
+WARNING: [Synth 8-6104] Input port 'flash_io1' has an internal driver [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:371]
+WARNING: [Synth 8-7071] port 'mprj_io_in' of module 'chip_io' is unconnected for instance 'padframe' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:360]
+WARNING: [Synth 8-7023] instance 'padframe' of module 'chip_io' has 44 connections declared, but only 43 given [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:360]
+INFO: [Synth 8-6157] synthesizing module 'mgmt_core_wrapper' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v:38]
+INFO: [Synth 8-6157] synthesizing module 'mgmt_core' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:1888]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:6809]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:6825]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7136]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7181]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7204]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7216]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7228]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7261]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7273]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7317]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7410]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7422]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7434]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7482]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7537]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7579]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7591]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7632]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7673]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7714]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7755]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7796]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7837]
+INFO: [Synth 8-6157] synthesizing module 'RAM256' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/vip/RAM256.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RAM256' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/vip/RAM256.v:1]
+INFO: [Synth 8-6157] synthesizing module 'RAM128' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/vip/RAM128.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RAM128' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/vip/RAM128.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VexRiscv' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:46]
+INFO: [Synth 8-6157] synthesizing module 'InstructionCache' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4305]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionCache' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4305]
+INFO: [Synth 8-6155] done synthesizing module 'VexRiscv' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_core' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_core_wrapper' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v:38]
+INFO: [Synth 8-6157] synthesizing module 'user_project_wrapper' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_wrapper_all.v:32]
+INFO: [Synth 8-6157] synthesizing module 'user_proj_example' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:38]
+INFO: [Synth 8-6157] synthesizing module 'bram' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bram' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'user_proj_example' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v:38]
+INFO: [Synth 8-6157] synthesizing module 'uart' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_receive' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_receive' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_transmission' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmission' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/uart.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'user_project_wrapper' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_wrapper_all.v:32]
+INFO: [Synth 8-6157] synthesizing module 'housekeeping' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:99]
+INFO: [Synth 8-6157] synthesizing module 'boledu_fd_sc_hd__clkbuf_8' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:1503]
+INFO: [Synth 8-6155] done synthesizing module 'boledu_fd_sc_hd__clkbuf_8' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:1503]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:714]
+INFO: [Synth 8-6157] synthesizing module 'housekeeping_spi' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping_spi.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'housekeeping_spi' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping_spi.v:75]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:1152]
+INFO: [Synth 8-6155] done synthesizing module 'housekeeping' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:99]
+INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
+INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block__parameterized0' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block__parameterized0' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
+INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block__parameterized1' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block__parameterized1' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v:65]
+INFO: [Synth 8-6157] synthesizing module 'gpio_control_block' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_control_block' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'caravel' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_caravel_0_0' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_caravel_0_0/synth/design_1_caravel_0_0.v:53]
+WARNING: [Synth 8-3848] Net io_in_3v3 in module/entity mprj_io does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v:104]
+WARNING: [Synth 8-3848] Net vddio_q in module/entity chip_io does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:122]
+WARNING: [Synth 8-3848] Net vssio_q in module/entity chip_io does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:122]
+WARNING: [Synth 8-3848] Net analog_a in module/entity chip_io does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:121]
+WARNING: [Synth 8-3848] Net analog_b in module/entity chip_io does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/chip_io.v:121]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_isIoAccess_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4586]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowRead_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4588]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowWrite_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4589]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_bypassTranslation_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4593]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_fetchPc_correctionReg_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2357]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_2_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2465]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_3_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2466]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_4_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2467]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_rspCounter_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3673]
+WARNING: [Synth 8-6014] Unused sequential element execute_CsrPlugin_wfiWake_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3693]
+WARNING: [Synth 8-6014] Unused sequential element HazardSimplePlugin_writeBackBuffer_payload_data_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3978]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_mcycle_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3982]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_minstret_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:3984]
+WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_FORMAL_PC_NEXT_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1969]
+WARNING: [Synth 8-6014] Unused sequential element execute_to_memory_FORMAL_PC_NEXT_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1968]
+WARNING: [Synth 8-6014] Unused sequential element memory_to_writeBack_FORMAL_PC_NEXT_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1967]
+WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_BYPASSABLE_EXECUTE_STAGE_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1988]
+WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_BYPASSABLE_MEMORY_STAGE_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1957]
+WARNING: [Synth 8-6014] Unused sequential element execute_to_memory_BYPASSABLE_MEMORY_STAGE_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1991]
+WARNING: [Synth 8-6014] Unused sequential element memory_to_writeBack_MEMORY_STORE_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2036]
+WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_CSR_READ_OPCODE_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1974]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_mtvec_mode_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4203]
+WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_firstCycle_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4221]
+WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_secondCycle_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:4225]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memory_to_writeBack_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:2096]
+WARNING: [Synth 8-3848] Net IBusCachedPlugin_cache_io_cpu_fetch_isRemoved in module/entity VexRiscv does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:92]
+WARNING: [Synth 8-3848] Net IBusCachedPlugin_mmuBus_rsp_bypassTranslation in module/entity VexRiscv does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:490]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_tx_fifo_source_first_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:2869]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_tx_fifo_source_last_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:2870]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_rx_fifo_source_first_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:6905]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_rx_fifo_source_last_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:6906]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_scratch_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7200]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_bus_errors_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7201]
+WARNING: [Synth 8-6014] Unused sequential element debug_mode_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7213]
+WARNING: [Synth 8-6014] Unused sequential element debug_oeb_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7225]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_litespimmap_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7249]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_cs_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7253]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_phyconfig_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7257]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7258]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_litespisdrphycore_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7270]
+WARNING: [Synth 8-6014] Unused sequential element gpio_mode1_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7297]
+WARNING: [Synth 8-6014] Unused sequential element gpio_mode0_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7301]
+WARNING: [Synth 8-6014] Unused sequential element gpio_ien_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7305]
+WARNING: [Synth 8-6014] Unused sequential element gpio_oe_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7309]
+WARNING: [Synth 8-6014] Unused sequential element gpio_in_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7310]
+WARNING: [Synth 8-6014] Unused sequential element gpio_out_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7314]
+WARNING: [Synth 8-6014] Unused sequential element la_ien_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7380]
+WARNING: [Synth 8-6014] Unused sequential element la_oe_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7393]
+WARNING: [Synth 8-6014] Unused sequential element la_in_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7394]
+WARNING: [Synth 8-6014] Unused sequential element la_out_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7407]
+WARNING: [Synth 8-6014] Unused sequential element mprj_wb_iena_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7419]
+WARNING: [Synth 8-6014] Unused sequential element spi_enabled_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7431]
+WARNING: [Synth 8-6014] Unused sequential element spi_master_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7462]
+WARNING: [Synth 8-6014] Unused sequential element spi_master_mosi_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7466]
+WARNING: [Synth 8-6014] Unused sequential element spi_master_miso_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7467]
+WARNING: [Synth 8-6014] Unused sequential element spi_master_cs_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7471]
+WARNING: [Synth 8-6014] Unused sequential element spi_master_loopback_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7475]
+WARNING: [Synth 8-6014] Unused sequential element spimaster_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7479]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_load_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7512]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_reload_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7516]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_en_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7520]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_value_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7525]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7526]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_enable_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7534]
+WARNING: [Synth 8-6014] Unused sequential element uart_txfull_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7564]
+WARNING: [Synth 8-6014] Unused sequential element uart_rxempty_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7565]
+WARNING: [Synth 8-6014] Unused sequential element uart_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7566]
+WARNING: [Synth 8-6014] Unused sequential element uart_enable_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7574]
+WARNING: [Synth 8-6014] Unused sequential element uart_txempty_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7575]
+WARNING: [Synth 8-6014] Unused sequential element uart_rxfull_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7576]
+WARNING: [Synth 8-6014] Unused sequential element uart_enabled_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7588]
+WARNING: [Synth 8-6014] Unused sequential element gpioin0_in_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7612]
+WARNING: [Synth 8-6014] Unused sequential element gpioin0_gpioin0_mode_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7616]
+WARNING: [Synth 8-6014] Unused sequential element gpioin0_gpioin0_edge_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7620]
+WARNING: [Synth 8-6014] Unused sequential element gpioin0_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7621]
+WARNING: [Synth 8-6014] Unused sequential element gpioin0_enable_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7629]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_in_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7653]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_gpioin1_mode_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7657]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_gpioin1_edge_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7661]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7662]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_enable_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7670]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_in_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7694]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_gpioin2_mode_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7698]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_gpioin2_edge_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7702]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7703]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_enable_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7711]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_in_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7735]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_gpioin3_mode_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7739]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_gpioin3_edge_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7743]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7744]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_enable_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7752]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_in_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7776]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_gpioin4_mode_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7780]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_gpioin4_edge_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7784]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7785]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_enable_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7793]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_in_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7817]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_gpioin5_mode_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7821]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_gpioin5_edge_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7825]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_status_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7826]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_enable_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7834]
+WARNING: [Synth 8-6014] Unused sequential element user_irq_ena_re_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:7846]
+WARNING: [Synth 8-6014] Unused sequential element memdat_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:8398]
 INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3936] Found unconnected internal register 'litespi_tx_mux_source_payload_mask_reg' and it is trimmed from '8' to '1' bits. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:2187]
-WARNING: [Synth 8-3848] Net la_data_uart in module/entity user_project_wrapper does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_wrapper_all.v:86]
-WARNING: [Synth 8-7137] Register wb_dat_o_reg in module housekeeping has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:741]
-WARNING: [Synth 8-7137] Register mgmt_ena_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:232]
-WARNING: [Synth 8-7137] Register gpio_holdover_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:233]
-WARNING: [Synth 8-7137] Register gpio_slow_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:234]
-WARNING: [Synth 8-7137] Register gpio_vtrip_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:235]
-WARNING: [Synth 8-7137] Register gpio_ib_mode_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:236]
-WARNING: [Synth 8-7137] Register gpio_inenb_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:237]
-WARNING: [Synth 8-7137] Register gpio_outenb_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:238]
-WARNING: [Synth 8-7137] Register gpio_dm_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:239]
-WARNING: [Synth 8-7137] Register gpio_ana_en_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:240]
-WARNING: [Synth 8-7137] Register gpio_ana_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:241]
-WARNING: [Synth 8-7137] Register gpio_ana_pol_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:242]
-WARNING: [Synth 8-3848] Net mprj_vcc_pwrgood in module/entity caravel does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:460]
-WARNING: [Synth 8-3848] Net mprj2_vcc_pwrgood in module/entity caravel does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:461]
-WARNING: [Synth 8-3848] Net mprj_vdd_pwrgood in module/entity caravel does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:462]
-WARNING: [Synth 8-3848] Net mprj2_vdd_pwrgood in module/entity caravel does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:463]
-WARNING: [Synth 8-3848] Net porb_h_in_nc in module/entity caravel does not have driver. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'litespi_tx_mux_source_payload_mask_reg' and it is trimmed from '8' to '1' bits. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:2187]
+WARNING: [Synth 8-3848] Net la_data_uart in module/entity user_project_wrapper does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/user/user_proj_wrapper_all.v:86]
+WARNING: [Synth 8-7137] Register wb_dat_o_reg in module housekeeping has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v:741]
+WARNING: [Synth 8-7137] Register mgmt_ena_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:232]
+WARNING: [Synth 8-7137] Register gpio_holdover_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:233]
+WARNING: [Synth 8-7137] Register gpio_slow_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:234]
+WARNING: [Synth 8-7137] Register gpio_vtrip_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:235]
+WARNING: [Synth 8-7137] Register gpio_ib_mode_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:236]
+WARNING: [Synth 8-7137] Register gpio_inenb_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:237]
+WARNING: [Synth 8-7137] Register gpio_outenb_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:238]
+WARNING: [Synth 8-7137] Register gpio_dm_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:239]
+WARNING: [Synth 8-7137] Register gpio_ana_en_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:240]
+WARNING: [Synth 8-7137] Register gpio_ana_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:241]
+WARNING: [Synth 8-7137] Register gpio_ana_pol_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v:242]
+WARNING: [Synth 8-3848] Net mprj_vcc_pwrgood in module/entity caravel does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:460]
+WARNING: [Synth 8-3848] Net mprj2_vcc_pwrgood in module/entity caravel does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:461]
+WARNING: [Synth 8-3848] Net mprj_vdd_pwrgood in module/entity caravel does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:462]
+WARNING: [Synth 8-3848] Net mprj2_vdd_pwrgood in module/entity caravel does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:463]
+WARNING: [Synth 8-3848] Net porb_h_in_nc in module/entity caravel does not have driver. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/caravel.v:481]
 WARNING: [Synth 8-7129] Port i_wb_sel[3] in module ctrl is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_wb_sel[2] in module ctrl is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_wb_sel[1] in module ctrl is either unconnected or has no load
@@ -347,50 +347,50 @@ WARNING: [Synth 8-7129] Port io_in[16] in module uart is either unconnected or h
 WARNING: [Synth 8-7129] Port io_in[15] in module uart is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 3115 ; free virtual = 6242
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 2353 ; free virtual = 5928
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 3108 ; free virtual = 6235
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 2390 ; free virtual = 5964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 3108 ; free virtual = 6235
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 2390 ; free virtual = 5964
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 3071 ; free virtual = 6199
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 2339 ; free virtual = 5913
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000 ; free physical = 3038 ; free virtual = 6166
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000 ; free physical = 2289 ; free virtual = 5863
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2918.086 ; gain = 0.000 ; free physical = 3026 ; free virtual = 6154
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2918.086 ; gain = 0.000 ; free physical = 2275 ; free virtual = 5850
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 3068 ; free virtual = 6200
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2325 ; free virtual = 5905
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 3068 ; free virtual = 6200
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2325 ; free virtual = 5905
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 3068 ; free virtual = 6200
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2325 ; free virtual = 5905
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'execute_to_memory_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1990]
+WARNING: [Synth 8-3936] Found unconnected internal register 'execute_to_memory_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v:1990]
 INFO: [Synth 8-802] inferred FSM for state register 'switch_Fetcher_l362_reg' in module 'VexRiscv'
-WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_1_reg' and it is trimmed from '10' to '8' bits. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:8403]
-WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_3_reg' and it is trimmed from '10' to '8' bits. [/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:8420]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_1_reg' and it is trimmed from '10' to '8' bits. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:8403]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_3_reg' and it is trimmed from '10' to '8' bits. [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v:8420]
 INFO: [Synth 8-802] inferred FSM for state register 'litespiphy_state_reg' in module 'mgmt_core'
 INFO: [Synth 8-802] inferred FSM for state register 'spimaster_state_reg' in module 'mgmt_core'
 INFO: [Synth 8-802] inferred FSM for state register 'grant_reg' in module 'mgmt_core'
@@ -499,7 +499,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'xfer_state_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'wbbd_state_reg' using encoding 'one-hot' in module 'housekeeping'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2947 ; free virtual = 6082
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2201 ; free virtual = 5783
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'inst/gpio_defaults_block_0' (gpio_defaults_block) to 'inst/gpio_defaults_block_1'
 INFO: [Synth 8-223] decloning instance 'inst/gpio_defaults_block_2' (gpio_defaults_block__parameterized0) to 'inst/gpio_defaults_block_4'
@@ -773,7 +773,7 @@ WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and w
 WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__17.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2395 ; free virtual = 5547
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2500 ; free virtual = 6095
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -819,13 +819,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2752 ; free virtual = 5920
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2109 ; free virtual = 5704
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2694 ; free virtual = 5861
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2077 ; free virtual = 5672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -894,7 +894,7 @@ INFO: [Synth 8-7052] The timing for the instance inst/mprj/mprj/user_bram/RAM_re
 INFO: [Synth 8-7052] The timing for the instance inst/mprj/mprj/user_bram/RAM_reg_3_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance inst/mprj/mprj/user_bram/RAM_reg_3_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2885 ; free virtual = 6053
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 1941 ; free virtual = 5536
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -913,37 +913,37 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'padframei_0' to logic
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2835 ; free virtual = 6004
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2187 ; free virtual = 5783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2834 ; free virtual = 6003
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2187 ; free virtual = 5783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2875 ; free virtual = 6044
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2187 ; free virtual = 5783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2875 ; free virtual = 6046
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2187 ; free virtual = 5783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2876 ; free virtual = 6046
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2201 ; free virtual = 5797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2876 ; free virtual = 6046
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2201 ; free virtual = 5797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -997,18 +997,18 @@ Report Cell Usage:
 |20    |LDC      |    75|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2876 ; free virtual = 6046
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2201 ; free virtual = 5797
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 1229 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2918.086 ; gain = 0.000 ; free physical = 2927 ; free virtual = 6097
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.094 ; gain = 16.008 ; free physical = 2941 ; free virtual = 6111
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 2918.086 ; gain = 0.000 ; free physical = 2245 ; free virtual = 5840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2918.094 ; gain = 16.008 ; free physical = 2245 ; free virtual = 5840
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2918.094 ; gain = 0.000 ; free physical = 3027 ; free virtual = 6201
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2918.094 ; gain = 0.000 ; free physical = 2285 ; free virtual = 5880
 INFO: [Netlist 29-17] Analyzing 529 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.094 ; gain = 0.000 ; free physical = 2946 ; free virtual = 6121
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.094 ; gain = 0.000 ; free physical = 2263 ; free virtual = 5858
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 79 instances were transformed.
   LDC => LDCE: 75 instances
@@ -1018,10 +1018,10 @@ Synth Design complete, checksum: 33d88456
 INFO: [Common 17-83] Releasing license: Synthesis
 193 Infos, 347 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2918.094 ; gain = 16.016 ; free physical = 3140 ; free virtual = 6314
-INFO: [Common 17-1381] The checkpoint '/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1/design_1_caravel_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2918.094 ; gain = 16.016 ; free physical = 2447 ; free virtual = 6043
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1/design_1_caravel_0_0.dcp' has been generated.
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Coretcl 2-1174] Renamed 54 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1/design_1_caravel_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_caravel_0_0_synth_1/design_1_caravel_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_caravel_0_0_utilization_synth.rpt -pb design_1_caravel_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  6 12:37:43 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 03:07:39 2023...

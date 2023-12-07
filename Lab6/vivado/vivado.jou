@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Dec  6 12:33:33 2023
-# Process ID: 6489
-# Current directory: /home/ubuntu/github/SoC-design/Lab6/vivado
+# Start of session at: Thu Dec  7 03:05:51 2023
+# Process ID: 12429
+# Current directory: /home/ubuntu/SoC/lab6/Lab6/vivado
 # Command line: vivado -source vvd_caravel_fpga_40mhz.tcl -mode tcl
-# Log file: /home/ubuntu/github/SoC-design/Lab6/vivado/vivado.log
-# Journal file: /home/ubuntu/github/SoC-design/Lab6/vivado/vivado.jou
+# Log file: /home/ubuntu/SoC/lab6/Lab6/vivado/vivado.log
+# Journal file: /home/ubuntu/SoC/lab6/Lab6/vivado/vivado.jou
 # Running On: ubuntu2004, OS: Linux, CPU Frequency: 2112.002 MHz, CPU Physical cores: 2, Host memory: 10425 MB
 #-----------------------------------------------------------
 source vvd_caravel_fpga_40mhz.tcl

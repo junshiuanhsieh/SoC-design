@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/ubuntu/github/SoC-design/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_xbar_0_synth_1'
+HD_PWD='/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_xbar_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

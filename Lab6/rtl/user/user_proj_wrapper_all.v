@@ -90,7 +90,7 @@ wire [2:0] irq_mprj, irq_uart;
 
 assign wbs_ack_o = wbs_ack_mprj || wbs_ack_uart;
 assign wbs_dat_o = wbs_adr_i[27] ? wbs_dat_mprj : wbs_dat_uart;
-assign user_irq = wbs_adr_i[27] ? irq_mprj : irq_uart; 
+assign user_irq = irq_uart;   //wbs_adr_i[27] ? irq_mprj : irq_uart; 
 assign la_data_out = wbs_adr_i[27] ? la_data_mprj : la_data_uart;
 assign io_out = io_out_uart;
 assign io_oeb = io_oeb_uart;

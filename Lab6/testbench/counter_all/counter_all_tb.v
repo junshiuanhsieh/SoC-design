@@ -161,8 +161,7 @@ module counter_la_all_tb;
 	end
 
 	initial begin
-		wait(checkbits == 16'hAB40);
-		
+		wait(checkbits == 16'hAB50);
 		$display("LA Test fir started");
 		wait(checkbits == 16'h0000);
 		$display("correct answer: %h", checkbits);
@@ -188,6 +187,7 @@ module counter_la_all_tb;
 		$display("correct answer: %h", checkbits);
 		
 		
+		wait(checkbits == 16'hAB60);
 		$display("LA Test mm started");
 		wait(checkbits == 16'h003E);
 		$display("correct answer: %h", checkbits);
@@ -199,6 +199,7 @@ module counter_la_all_tb;
 		$display("correct answer: %h", checkbits);
 		
 		
+		wait(checkbits == 16'hAB70);
 		$display("LA Test qsort started");
 		wait(checkbits == 16'h0028);
 		$display("correct answer: %h", checkbits);
@@ -230,17 +231,22 @@ module counter_la_all_tb;
 		//wait(checkbits == 16'd2669);
 		//$display("Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x%x", checkbits);		
 
-		$display("LA Test uart started");
-		send_data_1;
-		#2000000;
-		send_data_2;
-		#2000000;
+		
 
 
 		wait(checkbits == 16'hAB51);
 		$display("LA Test 2 passed");
 		#10000;
 		$finish;
+	end
+	
+	initial begin
+		$display("LA Test uart started");
+		#5000000;
+		send_data_1;
+		#2000000;
+		send_data_2;
+		#2000000;
 	end
 
 	task send_data_1;begin
