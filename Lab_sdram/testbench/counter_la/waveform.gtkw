@@ -1,0 +1,79 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Dec 13 17:59:01 2023
+[*]
+[dumpfile] "/home/ubuntu/github/SoC-design/Lab_sdram/testbench/counter_la/counter_la.vcd"
+[dumpfile_mtime] "Wed Dec 13 17:58:41 2023"
+[dumpfile_size] 194484187
+[savefile] "/home/ubuntu/github/SoC-design/Lab_sdram/testbench/counter_la/waveform.gtkw"
+[timestart] 1353252700
+[size] 1848 903
+[pos] -1 -1
+*-17.340225 1353712500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] counter_la_tb.
+[treeopen] counter_la_tb.uut.
+[treeopen] counter_la_tb.uut.mprj.
+[treeopen] counter_la_tb.uut.mprj.mprj.
+[sst_width] 233
+[signals_width] 297
+[sst_expanded] 1
+[sst_vpaned_height] 249
+@200
+-wishbone
+@28
+counter_la_tb.uut.mprj.wb_clk_i
+@22
+counter_la_tb.uut.mprj.wbs_adr_i[31:0]
+@28
+counter_la_tb.uut.mprj.mprj.valid
+counter_la_tb.uut.mprj.mprj.wbs_ack_o
+counter_la_tb.uut.mprj.wbs_we_i
+@22
+counter_la_tb.uut.mprj.wbs_dat_i[31:0]
+counter_la_tb.uut.mprj.wbs_dat_o[31:0]
+@200
+-in_out
+@28
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.in_valid
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.out_valid_q
+@200
+-control
+@24
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.state_q[3:0]
+@28
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.ready_q
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.busy
+@200
+-rw_info
+@22
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.user_addr[22:0]
+@28
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.saved_rw_q
+@22
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.saved_addr_q[22:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.map_addr[22:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+@200
+-dram
+@22
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.a_q[12:0]
+@28
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.ba_q[1:0]
+@22
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.sdram_dqi[31:0]
+@23
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.dqi_q[31:0]
+@28
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.cle_q
+@22
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.row_open_q[3:0]
+@200
+-prefetch
+@22
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.pf_addr_q[22:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.save_pf_addr_q[22:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.saved_data_q[31:0]
+@28
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.prefetch_q
+[pattern_trace] 1
+[pattern_trace] 0
