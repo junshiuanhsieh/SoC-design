@@ -37,16 +37,17 @@ module sdram_controller (
     wire [1:0]  Mapped_BA;
     wire [7:0]  Mapped_CA;
     assign Mapped_RA = {user_addr[22:10]};
-    assign Mapped_BA = {user_addr[9:8]};
-    assign Mapped_CA = {user_addr[7:0]};
+    assign Mapped_BA = {user_addr[8:7]};
+    assign Mapped_CA = {user_addr[9], user_addr[6:0]};
     assign addr = {Mapped_RA, Mapped_BA, Mapped_CA};
     
     // Cache implementation
     reg [31:0] cache_d[0:1], cache_q[0:1];
     reg [22:0] cache_addr_d[0:1], cache_addr_q[0:1];
     reg [1:0]  cache_cnt_d[0:1], cache_cnt_q[0:1]; 
-    wire [7:0] new_addr;
-    assign new_addr = user_addr[7:0] + 4'd8;
+    wire [22:0] new_addr, map_new_addr;
+    assign new_addr = user_addr + 4'd8;
+    assign map_new_addr = {new_addr[22:10], new_addr[8:7], new_addr[9], new_addr[6:0]};
     
     wire [31:0] cache0, cache1;
     wire [22:0] cache_addr0, cache_addr1;
@@ -245,15 +246,17 @@ module sdram_controller (
                             if (rw)
                                 state_d = WRITE;
                             else begin
-				 if (cache_addr_q[addr[2]] == addr[22:0] && !(addr[7:0] >= 23'h00 && addr[7:0] <= 23'h04)) begin // if the address is in cache
+				 if (cache_addr_q[addr[2]] == addr[22:0]) begin // if the address is in cache
 				     out_valid_d = 1'b1;
 				     data_d = cache_q[addr[2]];
 				     
-				     cmd_d = CMD_READ;
-                		     a_d = {2'b0, 1'b0, new_addr, 2'b0};
-                		     ba_d = addr[9:8];
-                		     cache_addr_d[addr[2]] = addr + 4'd8;
-                		     cache_cnt_d[addr[2]] = 2;
+				     if (row_open_q[map_new_addr[9:8]]) begin
+				     	cmd_d = CMD_READ;
+                		     	a_d = {2'b0, 1'b0, map_new_addr[7:0], 2'b0};
+                		     	ba_d = map_new_addr[9:8];
+                		     	cache_addr_d[map_new_addr[2]] = map_new_addr;
+                		     	cache_cnt_d[map_new_addr[2]] = 2;
+				     end
 				 end
 				 else begin                  
                     		     state_d = READ;
@@ -327,11 +330,13 @@ module sdram_controller (
                 out_valid_d = 1'b1;
                 state_d = IDLE;
                 
-                cmd_d = CMD_READ;
-                a_d = {2'b0, 1'b0, new_addr, 2'b0};
-                ba_d = addr[9:8];
-                cache_addr_d[addr[2]] = addr + 4'd8;
-                cache_cnt_d[addr[2]] = 2;
+                if (row_open_q[map_new_addr[9:8]]) begin
+		    cmd_d = CMD_READ;
+		    a_d = {2'b0, 1'b0, map_new_addr[7:0], 2'b0};  
+		    ba_d = map_new_addr[9:8];
+		    cache_addr_d[map_new_addr[2]] = map_new_addr;
+		    cache_cnt_d[map_new_addr[2]] = 2;
+            	 end
             end
 
             ///// WRITE /////
