@@ -14,6 +14,7 @@ module matmul #(
     input   wire                     ss_tlast, 
     output  wire                     ss_tready, 
 
+
     // AXI stream master
     input   wire                     sm_tready, 
     output  wire                     sm_tvalid, 
@@ -45,20 +46,16 @@ integer    i;
 reg    buf_full_r, buf_full_w;
 reg [(pDATA_WIDTH-1):0] buf_data_r, buf_data_w;
 reg    ss_tready_r, ss_tready_w;
-reg    ss_tready_valid_d1;
 assign ss_tready = ss_tready_r;
 
 // simple read
 reg    o_valid_r, o_valid_w;
 reg [(pDATA_WIDTH-1):0] o_data_r, o_data_w;
-assign o_valid = o_valid_r;
-assign o_data = o_data_r;
 assign sm_tvalid = o_valid_r;
 assign sm_tdata = o_data_r; /////////////////////////////
 
-
 always @(*) begin
-    ss_tready_w = ((state_r == READ) || (state_r == CALC && buf_full_r == 0 && ss_tready_r == 0)) ? 1'b1 : 1'b0;
+    ss_tready_w = ((state_r == READ && counter_a_r != 4'b1111) || (state_r == CALC && buf_full_r == 0 && ss_tready_r == 0)) ? 1'b1 : 1'b0;
     buf_data_w = (ss_tready_r && ss_tvalid) ? ss_tdata : buf_data_r;
     buf_full_w = (ss_tready_r && ss_tvalid) ? 1'b1 : (state_r == CALC && counter_b_r[1:0] == 2'b00) ? 1'b0 : buf_full_r;
 end
@@ -87,32 +84,26 @@ always @(*) begin
             end
         end
         READ: begin // read matrix A from axi-stream write buffer 
-            //if (buf_full_r) begin
-            if (ss_tready_r && ss_tvalid) begin
+            if (buf_full_r) begin
                 counter_a_w = counter_a_r + 1;
-                data_a_w[counter_a_r] = ss_tdata; //buf_data_r;
-                
+                data_a_w[counter_a_r] = buf_data_r;
+            end
             if (counter_a_r == 15) begin
                 counter_a_w = 0;
                 state_w = CALC;
-            end  
             end
         end
         CALC: begin // read matrix B and do calculation at the same time
             case (counter_b_r[1:0]) 
                 2'b00: begin
+                    counter_b_w = counter_b_r + 1;
+                    data_b_w = buf_data_r;
+                    mul_w = data_a_r[{counter_b_r[1:0], counter_b_r[5:4]}] * buf_data_r;
+                    out_addr_w = {counter_b_r[1:0], counter_b_r[3:2]};
                     out_data_w[out_addr_r] = out_data_r[out_addr_r] + mul_r;
                     if (counter_b_r[6]) begin
                         state_w = SEND;
                     end
-                    else if(ss_tready_valid_d1) begin //
-                        counter_b_w = counter_b_r + 1;
-                        data_b_w = buf_data_r;
-                        mul_w = data_a_r[{counter_b_r[1:0], counter_b_r[5:4]}] * buf_data_r;
-                        out_addr_w = {counter_b_r[1:0], counter_b_r[3:2]};
-                        //out_data_w[out_addr_r] = out_data_r[out_addr_r] + mul_r;
-                    end
-                    else out_data_w[out_addr_r] = out_data_r[out_addr_r];
                 end
                 2'b01, 2'b10, 2'b11: begin
                     counter_b_w = counter_b_r + 1;
@@ -123,10 +114,10 @@ always @(*) begin
             endcase
         end
         SEND: begin // send back the output matrix to DMA
+            counter_o_w = counter_o_r + 1;
             o_valid_w = 1;
             o_data_w = out_data_r[counter_o_r];
-            if(sm_tready) counter_o_w = counter_o_r + 1;
-            if (counter_o_r == 4'b1111 && sm_tready) begin
+            if (counter_o_r == 4'b1111) begin
                 state_w = IDLE;
             end
         end
@@ -151,7 +142,6 @@ always @(posedge clk or negedge rst_n) begin
 
         o_valid_r <= 0;
         o_data_r <= 0;
-        ss_tready_valid_d1 <= 0;
     end
     else begin
         ss_tready_r <= ss_tready_w;
@@ -170,7 +160,6 @@ always @(posedge clk or negedge rst_n) begin
 
         o_valid_r <= o_valid_w;
         o_data_r <= o_data_w;
-        ss_tready_valid_d1 <= ss_tready && ss_tvalid && state_r == CALC;
     end
 end
 

@@ -3,7 +3,9 @@
 module dma #(  
     parameter pADDR_WIDTH = 32,
     parameter pDATA_WIDTH = 32,
-    parameter anse_Num    = 11
+    parameter anse_Num    = 11,
+    parameter DATA_SIZE   = 11,
+    parameter ANS_SIZE    = 11
 ) (  
     // AXI Lite write
     output  wire                     awready,
@@ -58,7 +60,11 @@ wire [(pDATA_WIDTH-1):0] data_Di;
 wire [(12-1):0] data_A;
 wire [(pDATA_WIDTH-1):0] data_Do;
 
-bram11 ans_ram(
+wire [11:0] data_ram_addr;
+assign data_ram_addr = (state_axi_stream_r > 0)? data_A_w - 12'd4 : data_A - 12'd4;
+
+bram11 #(.SIZE(ANS_SIZE)
+) ans_ram (
     .clk(axis_clk),
     .we(|ans_WE),
     .re(ans_EN),
@@ -68,12 +74,13 @@ bram11 ans_ram(
     .rdo(ans_Do)
 );
 
-bram11 data_ram(
+bram11 #(.SIZE(DATA_SIZE)
+) data_ram (
     .clk(axis_clk),
     .we(|data_WE),
     .re(data_EN),
-    .waddr(data_A - 12'd4),
-    .raddr(data_A - 12'd4),
+    .waddr(data_ram_addr),
+    .raddr(data_ram_addr),
     .wdi(data_Di),
     .rdo(data_Do)
 );
@@ -165,7 +172,7 @@ always @(*) begin
     end
     // COEF read
     else if(arvalid) begin
-        if(awaddr[7:4] == 4'h0) begin
+        if(araddr[7:4] == 4'h0) begin
             rvalid_w = 1'b1;
             rdata_w = {ap_idle_r, ap_done_r, ap_start_r};
             ap_done_w = 0;
@@ -202,7 +209,7 @@ always @(*) begin
     counter_data_len_w = counter_data_len_r;
     state_wb_w = state_wb_r;
     state_axi_stream_w = state_axi_stream_r;
-    sm_tvalid_w = 0;
+    sm_tvalid_w = (sm_tvalid_r && !sm_tready) ? sm_tvalid_r : 0;
     sm_tdata_w = sm_tdata_r;
     counter_axi_stream_wdata_len_w = counter_axi_stream_wdata_len_r;
     sm_tlast_w = sm_tlast_r;
@@ -254,7 +261,7 @@ always @(*) begin
                 out_valid_w = 1;
                 out_data_w = ans_Do;
                 counter_data_len_w = counter_data_len_r + 1; 
-                if (counter_data_len_r == data_len_r - 1) begin 
+                if (counter_data_len_r == ans_len_r - 1) begin 
                     state_wb_w = 3'd4;
                 end
                 else state_wb_w = 3'd2;
@@ -283,20 +290,23 @@ always @(*) begin
         3'd2 : begin
             
             if (sm_tready) begin 
+            	data_A_w = data_A_r + 4; //TODO
 		 sm_tvalid_w = 1; 
                 sm_tdata_w = data_Do;
-                data_A_w = data_A_r + 4; //TODO
+                
                 counter_axi_stream_wdata_len_w = counter_axi_stream_wdata_len_r + 1;
                 //sm_tvalid_w = 0;
                 if (counter_axi_stream_wdata_len_r == data_len_r - 1) begin 
                     state_axi_stream_w = 3'd3;
                     sm_tlast_w = 1;
+                    //sm_tvalid_w = 1; 
                 end 
-                else state_axi_stream_w = 3'd1;
+                else state_axi_stream_w = 3'd2;
             end
         end
         3'd3 : begin 
             state_axi_stream_w = state_axi_stream_r;
+            //sm_tvalid_w = 0; 
         end
 
     endcase
@@ -307,7 +317,7 @@ always @(*) begin
         ans_WE_w = 4'b1111;
         ans_Di_w = ss_tdata;
         ans_A_w = ans_A_r + 4; //TODO NEXT ADDR + 4 ?
-        if(ans_A_r == 32'h28) begin 
+        if(ans_A_r == (ans_len_r - 1) * 4) begin 
             end_read_fir_w = 1;
         end
     end

@@ -24,9 +24,11 @@
 #include <irq_vex.h>
 #endif
 
-extern int* fir();
-extern int* matmul();
-extern int* qsort();
+//extern int* fir();
+//extern int* matmul();
+//extern int* qsort();
+extern int* all();
+extern void check_ans();
 
 extern void uart_write();
 extern void uart_write_char();
@@ -151,9 +153,14 @@ void main()
 	user_irq_0_ev_enable_write(1);	
 	#endif
 	
+	reg_mprj_datal = 0xAB000000;
+	int* temp = all();
+	reg_mprj_datal = 0xAB100000;
+	check_ans();
+	
+	/*
 	reg_mprj_datal = 0xAB500000;
 	int* tmp = fir();
-	
 	for(int i = 0; i < 11; i++){
 	    reg_mprj_datal = *(tmp+i) << 16;
 	}
@@ -171,7 +178,7 @@ void main()
 	for(int i = 0; i < 10; i++){
 	    reg_mprj_datal = *(tmp+i) << 16;
 	}
-	
+	*/
 
 	/*for(int i = 0; i < 4; i++){
 		uart_write(i);

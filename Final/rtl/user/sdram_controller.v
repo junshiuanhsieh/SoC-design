@@ -113,6 +113,7 @@ module sdram_controller (
     reg [22:0] addr_d, addr_q;
     reg [31:0] data_d, data_q;
     reg out_valid_d, out_valid_q;
+    reg out_valid_d1;
 
     reg [15:0] delay_ctr_d, delay_ctr_q;
 
@@ -321,8 +322,10 @@ module sdram_controller (
                     end
                     else begin
                         pf_addr_d = 1;
+                        //pf_data_d = sdram_dqi; ///////////////////////
                     end
                 end
+                if(out_valid_d1 && !prefetch_q) pf_data_d = sdram_dqi; 
             end
 
             ///// REFRESH /////
@@ -390,7 +393,10 @@ module sdram_controller (
                 a_d = {2'b0, 1'b0, addr_q[7:0], 2'b00};
                 ba_d = addr_q[9:8];
 
-                state_d = IDLE;
+                //state_d = IDLE;
+                state_d = WAIT;
+                next_state_d = IDLE;
+                delay_ctr_d = 2; 
             end
 
             ///// PRECHARGE /////
@@ -499,6 +505,7 @@ module sdram_controller (
         delay_ctr_q <= delay_ctr_d;
         prefetch_d1 <= prefetch_q;
         prefetch_d2 <= prefetch_d1;
+        out_valid_d1<= out_valid;
         
     end
 

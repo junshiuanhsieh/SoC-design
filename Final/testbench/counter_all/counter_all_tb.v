@@ -159,9 +159,14 @@ module counter_la_all_tb;
 		$display("%c[0m",27);
 		$finish;
 	end
-
+	reg start_time;
 	initial begin
 		
+		$timeformat(-3, 5, " ms", 20);
+		wait(checkbits == 16'hAB00);
+		$display("Calculation start, Time = %0t", $realtime);
+		wait(checkbits == 16'hAB10);
+		$display("Calculation finish, Time = %0t", $realtime);
 		wait(checkbits == 16'hAB50);
 		$display("LA Test fir started");
 		wait(checkbits == 16'h0000);
@@ -245,16 +250,7 @@ module counter_la_all_tb;
 		wait(checkbits == 16'h1787);
 		$display("correct answer: %h", checkbits);
 		wait(checkbits == 16'h2371);
-		$display("correct answer: %h", checkbits);
-
-		//wait(checkbits == 16'd40);
-		//$display("Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x%x", checkbits);
-		//wait(checkbits == 16'd893);
-		//$display("Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x%x", checkbits);
-		//wait(checkbits == 16'd2541);
-		//$display("Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x%x", checkbits);
-		//wait(checkbits == 16'd2669);
-		//$display("Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x%x", checkbits);		
+		$display("correct answer: %h", checkbits);	
 
 		
 
@@ -262,18 +258,18 @@ module counter_la_all_tb;
 		wait(checkbits == 16'hAB51);
 		$display("LA Test 2 passed");
 		#100;
-		$finish;
+		//$finish;
 	end
 	
 	initial begin
 		$display("LA Test uart started");
-		//#100000;
-		//send_data_1;
+		//#500000;
+		send_data_1;
 		#500000;
-		//send_data_2;
-		#3000000;
+		send_data_2;
+		#4000000;
 		
-		//$finish;
+		$finish;
 	end
 
 	task send_data_1;begin
