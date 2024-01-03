@@ -30,6 +30,7 @@
 extern int* all();
 extern void check_ans();
 
+
 extern void uart_write();
 extern void uart_write_char();
 extern void uart_write_string();
@@ -157,40 +158,14 @@ void main()
 	int* temp = all();
 	reg_mprj_datal = 0xAB100000;
 	check_ans();
-	
-	/*
-	reg_mprj_datal = 0xAB500000;
-	int* tmp = fir();
-	for(int i = 0; i < 11; i++){
-	    reg_mprj_datal = *(tmp+i) << 16;
-	}
-	
-	reg_mprj_datal = 0xAB600000;
-	tmp = matmul();
-	
-	for(int i = 0; i < 16; i++){
-	    reg_mprj_datal = *(tmp+i) << 16;
-	}
 
-	reg_mprj_datal = 0xAB700000;
-	tmp = qsort();
 	
-	for(int i = 0; i < 10; i++){
-	    reg_mprj_datal = *(tmp+i) << 16;
-	}
-	*/
-
-	/*for(int i = 0; i < 4; i++){
-		uart_write(i);
-	}*/
-
-	//uart_write_string("TEST!");
-
 	//reg_mprj_datal = uart_isr();
 
 	//print("\n");
 	//print("Monitor: Test 1 Passed\n\n");	// Makes simulation very long!
 	reg_mprj_datal = 0xAB510000;
+
 
 
 }

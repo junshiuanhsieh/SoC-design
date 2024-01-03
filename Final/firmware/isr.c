@@ -31,19 +31,21 @@ void isr(void)
 #else
     uint32_t irqs = irq_pending() & irq_getmask();
     int buf;
-    
+
     if ( irqs & (1 << USER_IRQ_0_INTERRUPT)) {
-    
-	//reg_mprj_datal = 0x12345678;
+        
         user_irq_0_ev_pending_write(1); //Clear Interrupt Pending Event
         
-        buf = uart_read();
-        uart_write(buf);
-        buf = uart_read();
-        uart_write(buf);
-
+        int num;
+        num = reg_uart_stat;
+        for (int i=0; i<num; i=i+1) {
+            buf = uart_read();
+            uart_write(buf);
+        }
+        
     }
 #endif
+
     return;
 
 }

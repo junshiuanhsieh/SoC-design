@@ -40,8 +40,17 @@ proc checkRequiredFiles { origin_dir} {
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/caravel.v"]"\
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/bram.v]"\
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/$user_design_file"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/arbiter.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/bram.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/bram11.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/dma.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/fir.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/matmul.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/sdr.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/sdram_controller.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/sort.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/wb_to_axi.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/uart.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/uart_tx.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/uart_rx.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v"]"\
@@ -209,8 +218,17 @@ set files [list \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/caravel.v"] \
- [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/bram.v"] \
- [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/${user_design_file}"] \
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/arbiter.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/bram.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/bram11.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/dma.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/fir.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/matmul.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/sdr.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/sdram_controller.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/sort.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/wb_to_axi.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/uart.v"]\
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/uart_tx.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/uart_rx.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v"] \

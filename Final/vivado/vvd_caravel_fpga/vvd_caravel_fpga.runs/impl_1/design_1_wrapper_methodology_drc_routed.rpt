@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-| Date         : Thu Dec  7 03:11:36 2023
+| Date         : Mon Jan  1 23:09:54 2024
 | Host         : ubuntu2004 running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,12 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1005
+             Violations found: 1086
 +-----------+------------------+------------------------------+------------+
 | Rule      | Severity         | Description                  | Violations |
 +-----------+------------------+------------------------------+------------+
 | TIMING-14 | Critical Warning | LUT on the clock tree        | 1          |
 | TIMING-17 | Critical Warning | Non-clocked sequential cell  | 1000       |
+| DPIR-1    | Warning          | Asynchronous driver check    | 81         |
 | LUTAR-1   | Warning          | LUT drives async reset alert | 4          |
 +-----------+------------------+------------------------------+------------+
 
@@ -36,32 +37,32 @@ Table of Contents
 -----------------
 TIMING-14#1 Critical Warning
 LUT on the clock tree  
-The LUT design_1_i/caravel_0/inst/soc/core/RAM_reg_0_0_0_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+The LUT design_1_i/caravel_0/inst/mprj/user_arbiter/user_bram/Bank3/RAM_reg_i_1__2 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
 Related violations: <none>
 
 TIMING-17#1 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/gpio_dm_reg[0]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#2 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/gpio_dm_reg[1]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#3 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/gpio_dm_reg[2]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#4 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#5 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[0]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#6 Critical Warning
@@ -106,27 +107,27 @@ Related violations: <none>
 
 TIMING-17#14 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/gpio_dm_reg[0]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/gpio_dm_reg[1]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/gpio_dm_reg[2]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_1[1]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Critical Warning
@@ -171,27 +172,27 @@ Related violations: <none>
 
 TIMING-17#27 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Critical Warning
@@ -236,27 +237,27 @@ Related violations: <none>
 
 TIMING-17#40 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#41 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#42 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#43 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#44 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[1]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#45 Critical Warning
@@ -301,27 +302,27 @@ Related violations: <none>
 
 TIMING-17#53 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#54 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#55 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#56 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#57 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_bidir_2[2]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#58 Critical Warning
@@ -366,27 +367,27 @@ Related violations: <none>
 
 TIMING-17#66 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#67 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#68 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#69 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#70 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[0]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#71 Critical Warning
@@ -431,27 +432,27 @@ Related violations: <none>
 
 TIMING-17#79 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#80 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#81 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#82 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#83 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[10]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#84 Critical Warning
@@ -491,27 +492,27 @@ Related violations: <none>
 
 TIMING-17#91 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#92 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#93 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#94 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#95 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[1]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#96 Critical Warning
@@ -556,27 +557,27 @@ Related violations: <none>
 
 TIMING-17#104 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#105 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#106 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#107 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#108 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[2]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#109 Critical Warning
@@ -621,27 +622,27 @@ Related violations: <none>
 
 TIMING-17#117 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#118 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#119 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#120 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#121 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[3]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#122 Critical Warning
@@ -686,27 +687,27 @@ Related violations: <none>
 
 TIMING-17#130 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#131 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#132 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#133 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#134 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[4]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#135 Critical Warning
@@ -751,27 +752,27 @@ Related violations: <none>
 
 TIMING-17#143 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#144 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#145 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#146 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#147 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[5]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#148 Critical Warning
@@ -816,27 +817,27 @@ Related violations: <none>
 
 TIMING-17#156 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#157 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#158 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#159 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#160 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[6]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#161 Critical Warning
@@ -881,27 +882,27 @@ Related violations: <none>
 
 TIMING-17#169 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#170 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#171 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#172 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#173 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[7]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#174 Critical Warning
@@ -946,27 +947,27 @@ Related violations: <none>
 
 TIMING-17#182 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#183 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#184 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#185 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#186 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[8]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#187 Critical Warning
@@ -1011,27 +1012,27 @@ Related violations: <none>
 
 TIMING-17#195 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#196 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#197 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#198 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#199 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1[9]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#200 Critical Warning
@@ -1116,27 +1117,27 @@ Related violations: <none>
 
 TIMING-17#216 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#217 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#218 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#219 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#220 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[0]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#221 Critical Warning
@@ -1181,27 +1182,27 @@ Related violations: <none>
 
 TIMING-17#229 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/gpio_dm_reg[0]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#230 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/gpio_dm_reg[1]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#231 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#232 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/gpio_outenb_reg_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#233 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[1]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#234 Critical Warning
@@ -1246,27 +1247,27 @@ Related violations: <none>
 
 TIMING-17#242 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#243 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#244 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#245 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#246 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[2]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#247 Critical Warning
@@ -1311,27 +1312,27 @@ Related violations: <none>
 
 TIMING-17#255 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#256 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#257 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#258 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#259 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[3]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#260 Critical Warning
@@ -1376,27 +1377,27 @@ Related violations: <none>
 
 TIMING-17#268 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#269 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#270 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#271 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#272 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[4]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#273 Critical Warning
@@ -1441,27 +1442,27 @@ Related violations: <none>
 
 TIMING-17#281 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#282 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#283 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#284 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#285 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_1a[5]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#286 Critical Warning
@@ -1506,27 +1507,27 @@ Related violations: <none>
 
 TIMING-17#294 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#295 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#296 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#297 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#298 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[0]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#299 Critical Warning
@@ -1566,27 +1567,27 @@ Related violations: <none>
 
 TIMING-17#306 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#307 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#308 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#309 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#310 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[10]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#311 Critical Warning
@@ -1631,27 +1632,27 @@ Related violations: <none>
 
 TIMING-17#319 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#320 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#321 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#322 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#323 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[11]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#324 Critical Warning
@@ -1696,27 +1697,27 @@ Related violations: <none>
 
 TIMING-17#332 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#333 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#334 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#335 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#336 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[12]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#337 Critical Warning
@@ -1761,27 +1762,27 @@ Related violations: <none>
 
 TIMING-17#345 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#346 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#347 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#348 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#349 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[13]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#350 Critical Warning
@@ -1826,27 +1827,27 @@ Related violations: <none>
 
 TIMING-17#358 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#359 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#360 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#361 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#362 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[14]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#363 Critical Warning
@@ -1891,27 +1892,27 @@ Related violations: <none>
 
 TIMING-17#371 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#372 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#373 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#374 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#375 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[15]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#376 Critical Warning
@@ -1956,27 +1957,27 @@ Related violations: <none>
 
 TIMING-17#384 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#385 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#386 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#387 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#388 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[1]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#389 Critical Warning
@@ -2021,27 +2022,27 @@ Related violations: <none>
 
 TIMING-17#397 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#398 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#399 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#400 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#401 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[2]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#402 Critical Warning
@@ -2086,27 +2087,27 @@ Related violations: <none>
 
 TIMING-17#410 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#411 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#412 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#413 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#414 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[3]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#415 Critical Warning
@@ -2151,27 +2152,27 @@ Related violations: <none>
 
 TIMING-17#423 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#424 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#425 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#426 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#427 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[4]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#428 Critical Warning
@@ -2216,27 +2217,27 @@ Related violations: <none>
 
 TIMING-17#436 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#437 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#438 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#439 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#440 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[5]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#441 Critical Warning
@@ -2281,27 +2282,27 @@ Related violations: <none>
 
 TIMING-17#449 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#450 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#451 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#452 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#453 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[6]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#454 Critical Warning
@@ -2346,27 +2347,27 @@ Related violations: <none>
 
 TIMING-17#462 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#463 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#464 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#465 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#466 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[7]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#467 Critical Warning
@@ -2411,27 +2412,27 @@ Related violations: <none>
 
 TIMING-17#475 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#476 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#477 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#478 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#479 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[8]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#480 Critical Warning
@@ -2476,27 +2477,27 @@ Related violations: <none>
 
 TIMING-17#488 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/gpio_dm_reg[0]_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/gpio_dm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#489 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/gpio_dm_reg[1]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/gpio_dm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#490 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/gpio_dm_reg[2]_C/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/gpio_dm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#491 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/gpio_outenb_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/gpio_outenb_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#492 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/mgmt_ena_reg_P/C is not reached by a timing clock
+The clock pin design_1_i/caravel_0/inst/gpio_control_in_2[9]/mgmt_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#493 Critical Warning
@@ -5039,6 +5040,411 @@ Non-clocked sequential cell
 The clock pin design_1_i/caravel_0/inst/housekeeping/irq_spi_reg/C is not reached by a timing clock
 Related violations: <none>
 
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#33 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#34 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#35 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#36 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#37 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#38 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#39 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#40 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#41 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#42 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#43 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#44 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#45 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#46 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#47 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#48 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#49 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#50 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#51 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#52 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#53 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#54 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#55 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#56 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#57 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#58 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#59 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#60 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#61 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#62 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#63 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#64 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#65 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#66 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__0/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#67 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#68 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#69 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#70 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#71 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#72 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#73 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#74 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#75 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#76 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#77 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#78 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#79 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#80 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#81 Warning
+Asynchronous driver check  
+DSP design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1 input pin design_1_i/caravel_0/inst/mprj/inst_fir/product_r0__1/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
 LUTAR-1#1 Warning
 LUT drives async reset alert  
 LUT cell design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
@@ -5069,7 +5475,7 @@ design_1_i/caravel_0/inst/gpio_control_in_1_c_3/CLR,
 design_1_i/caravel_0/inst/gpio_control_in_1_c_4/CLR,
 design_1_i/caravel_0/inst/gpio_control_in_1_c_5/CLR,
 design_1_i/caravel_0/inst/gpio_control_in_1_c_6/CLR,
-design_1_i/caravel_0/inst/gpio_control_in_2[9]/mgmt_ena_reg_P/PRE,
+design_1_i/caravel_0/inst/gpio_control_in_2[9]/mgmt_ena_reg/PRE,
 design_1_i/caravel_0/inst/gpio_control_in_2[9]/serial_data_out_reg/CLR,
 design_1_i/caravel_0/inst/gpio_control_in_2[9]/shift_register_reg[0]/CLR,
 design_1_i/caravel_0/inst/gpio_control_in_2[9]/shift_register_reg[10]/CLR,
@@ -5080,6 +5486,26 @@ design_1_i/caravel_0/inst/gpio_control_in_2[9]/shift_register_reg[1]/CLR
 Related violations: <none>
 
 LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/caravel_0/inst/soc/FSM_sequential_state[2]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[28]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[29]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[2]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[30]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[31]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[3]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[4]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[5]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[6]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[7]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[8]/CLR,
+design_1_i/caravel_0/inst/mprj/wb_to_axi/wdata_r_reg[9]/CLR,
+design_1_i/caravel_0/out_data_r_reg[1][31]_i_29/CLR,
+design_1_i/caravel_0/product_r0_carry_i_7/CLR,
+design_1_i/caravel_0/product_r0_carry_i_8/CLR
+ (the first 15 of 3359 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
 LUT drives async reset alert  
 LUT cell design_1_i/caravel_0/inst/soc/core/flash_csb_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/spiflash_0/inst/bytecount_reg[3]/CLR,
 design_1_i/spiflash_0/inst/bytecount_reg[4]/CLR,
@@ -5096,26 +5522,6 @@ design_1_i/spiflash_0/inst/outbuf_reg[4]/CLR,
 design_1_i/spiflash_0/inst/outbuf_reg[5]/CLR,
 design_1_i/spiflash_0/inst/outbuf_reg[6]/CLR,
 design_1_i/spiflash_0/inst/outbuf_reg[7]/CLR (the first 15 of 31 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#4 Warning
-LUT drives async reset alert  
-LUT cell design_1_i/caravel_0/inst/soc/int_rst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/caravel_0/inst/mprj/uart/transmission/clk_cnt_reg[30]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/clk_cnt_reg[31]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/clk_cnt_reg[3]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/clk_cnt_reg[4]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/clk_cnt_reg[5]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/clk_cnt_reg[6]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/clk_cnt_reg[7]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/clk_cnt_reg[8]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/clk_cnt_reg[9]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/detect_posedge_start_reg[0]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/detect_posedge_start_reg[1]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/tx_index_reg[0]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/tx_index_reg[1]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/tx_index_reg[2]/CLR,
-design_1_i/caravel_0/inst/mprj/uart/transmission/tx_reg/PRE
- (the first 15 of 163 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 

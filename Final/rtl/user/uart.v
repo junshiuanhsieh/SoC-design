@@ -43,27 +43,33 @@ module uart #(
   // irq
   reg user_irq_r, user_irq_w;
   reg [1:0] irq_cnt_r, irq_cnt_w;
+  reg [31:0] cnt_r, cnt_w;
   wire irq;
   assign user_irq = user_irq_r;	// Use USER_IRQ_0
   always @(*) begin
       user_irq_w = 0;
       irq_cnt_w = irq_cnt_r;
+      cnt_w = cnt_r + 1;
       if (irq) begin
           irq_cnt_w = irq_cnt_r + 1;
       end
-      if (irq_cnt_r == 2) begin
+      if (irq_cnt_r == 2 || cnt_r == 500000) begin
           irq_cnt_w = irq;
           user_irq_w = 1;
+          cnt_w = 0;
       end
   end
+  
   always @(posedge wb_clk_i or posedge wb_rst_i) begin
       if (wb_rst_i) begin
           user_irq_r <= 0;
           irq_cnt_r <= 0;
+          cnt_r <= 0;
       end
       else begin
           user_irq_r <= user_irq_w;
           irq_cnt_r <= irq_cnt_w;
+          cnt_r <= cnt_w;
       end
   end	
 

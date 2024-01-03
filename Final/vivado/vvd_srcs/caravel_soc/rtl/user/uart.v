@@ -41,8 +41,31 @@ module uart #(
   assign rx = io_in[5];	// Connect mprj_io_5 to rx
 
   // irq
+  reg user_irq_r, user_irq_w;
+  reg [1:0] irq_cnt_r, irq_cnt_w;
   wire irq;
-  assign user_irq = {2'b00,irq};	// Use USER_IRQ_0
+  assign user_irq = user_irq_r;	// Use USER_IRQ_0
+  always @(*) begin
+      user_irq_w = 0;
+      irq_cnt_w = irq_cnt_r;
+      if (irq) begin
+          irq_cnt_w = irq_cnt_r + 1;
+      end
+      if (irq_cnt_r == 2) begin
+          irq_cnt_w = irq;
+          user_irq_w = 1;
+      end
+  end
+  always @(posedge wb_clk_i or posedge wb_rst_i) begin
+      if (wb_rst_i) begin
+          user_irq_r <= 0;
+          irq_cnt_r <= 0;
+      end
+      else begin
+          user_irq_r <= user_irq_w;
+          irq_cnt_r <= irq_cnt_w;
+      end
+  end	
 
   // CSR
   wire [7:0] rx_data; 

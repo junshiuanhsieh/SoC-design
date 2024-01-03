@@ -10,9 +10,9 @@
 
 source design_1_read_romcode_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC/lab6/Lab6/vivado/vitis_prj/hls_caravel_ps'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC/lab6/Lab6/vivado/vitis_prj/hls_output_pin'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC/lab6/Lab6/vivado/vitis_prj/hls_read_romcode'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC/Final/vivado/vitis_prj/hls_caravel_ps'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC/Final/vivado/vitis_prj/hls_output_pin'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC/Final/vivado/vitis_prj/hls_read_romcode'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
 Command: synth_design -top design_1_read_romcode_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -21,77 +21,77 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14048
+INFO: [Synth 8-7075] Helper process launched with PID 30654
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 1333 ; free virtual = 4936
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2902.082 ; gain = 0.000 ; free physical = 931 ; free virtual = 4604
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_read_romcode_0_0' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_read_romcode_0_0/synth/design_1_read_romcode_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode.v:10]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_read_romcode_Pipeline_VITIS_LOOP_31_1' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_read_romcode_Pipeline_VITIS_LOOP_31_1.v:10]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_flow_control_loop_pipe_sequential_init' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_flow_control_loop_pipe_sequential_init.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_flow_control_loop_pipe_sequential_init' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_flow_control_loop_pipe_sequential_init.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_read_romcode_Pipeline_VITIS_LOOP_31_1' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_read_romcode_Pipeline_VITIS_LOOP_31_1.v:10]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_control_s_axi' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_control_s_axi.v:7]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_control_s_axi.v:210]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_control_s_axi' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_control_s_axi.v:7]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:11]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_store' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:780]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized0' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_mem' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2918]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_mem' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2918]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized0' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized1' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized0' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized0' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized1' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized2' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized1' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized1' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized2' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_store' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:780]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_load' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:324]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized3' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_mem__parameterized0' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2918]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_mem__parameterized0' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2918]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized3' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_load' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:324]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_write' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1852]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_reg_slice' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_reg_slice' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized4' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized2' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized2' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized4' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_throttle' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2360]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized0' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized0' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized5' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized3' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized3' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized5' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized6' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized4' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized4' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized6' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_throttle' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2360]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized1' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized1' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2352]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2355]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_write' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1852]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_read' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1468]
-INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized2' [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized2' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1844]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_read' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1468]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'read_romcode' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_read_romcode_0_0' (0#1) [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_read_romcode_0_0/synth/design_1_read_romcode_0_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_control_s_axi.v:278]
+INFO: [Synth 8-6157] synthesizing module 'design_1_read_romcode_0_0' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_read_romcode_0_0/synth/design_1_read_romcode_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode.v:10]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_read_romcode_Pipeline_VITIS_LOOP_31_1' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_read_romcode_Pipeline_VITIS_LOOP_31_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_flow_control_loop_pipe_sequential_init' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_flow_control_loop_pipe_sequential_init' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_read_romcode_Pipeline_VITIS_LOOP_31_1' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_read_romcode_Pipeline_VITIS_LOOP_31_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_control_s_axi' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_control_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_control_s_axi.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_control_s_axi' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_store' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized0' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_mem' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_mem' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized0' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized1' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized0' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized0' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized1' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized2' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized1' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized1' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized2' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_store' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_load' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized3' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_mem__parameterized0' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_mem__parameterized0' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized3' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_load' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_write' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_reg_slice' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_reg_slice' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized4' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized2' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized2' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized4' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_throttle' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized0' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized0' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized5' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized3' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized3' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized5' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized6' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized4' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_srl__parameterized4' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_fifo__parameterized6' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_throttle' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized1' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized1' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2352]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2355]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_write' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_read' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1468]
+INFO: [Synth 8-6157] synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized2' [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_reg_slice__parameterized2' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1844]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi_read' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:1468]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode_BUS0_m_axi' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_BUS0_m_axi.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'read_romcode' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_read_romcode_0_0' (0#1) [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_read_romcode_0_0/synth/design_1_read_romcode_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/aab2/hdl/verilog/read_romcode_control_s_axi.v:278]
 WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module read_romcode_BUS0_m_axi_read is either unconnected or has no load
 WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module read_romcode_BUS0_m_axi_read is either unconnected or has no load
 WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module read_romcode_BUS0_m_axi_read is either unconnected or has no load
@@ -194,50 +194,50 @@ WARNING: [Synth 8-7129] Port internal_bram_Dout_A[29] in module read_romcode_rea
 WARNING: [Synth 8-7129] Port internal_bram_Dout_A[28] in module read_romcode_read_romcode_Pipeline_VITIS_LOOP_31_1 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 2342 ; free virtual = 5950
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2902.082 ; gain = 0.000 ; free physical = 2002 ; free virtual = 5676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 2384 ; free virtual = 5993
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2902.082 ; gain = 0.000 ; free physical = 1992 ; free virtual = 5666
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 2384 ; free virtual = 5993
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2902.082 ; gain = 0.000 ; free physical = 1992 ; free virtual = 5666
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2902.078 ; gain = 0.000 ; free physical = 2371 ; free virtual = 5979
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2902.082 ; gain = 0.000 ; free physical = 2000 ; free virtual = 5674
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_read_romcode_0_0/constraints/read_romcode_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_read_romcode_0_0/constraints/read_romcode_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_read_romcode_0_0/constraints/read_romcode_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_read_romcode_0_0/constraints/read_romcode_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.086 ; gain = 0.000 ; free physical = 2268 ; free virtual = 5877
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.090 ; gain = 0.000 ; free physical = 1812 ; free virtual = 5486
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2918.086 ; gain = 0.000 ; free physical = 2266 ; free virtual = 5875
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2918.090 ; gain = 0.000 ; free physical = 1812 ; free virtual = 5486
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2252 ; free virtual = 5861
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1940 ; free virtual = 5614
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2252 ; free virtual = 5861
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1940 ; free virtual = 5614
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2252 ; free virtual = 5861
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1940 ; free virtual = 5614
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'read_romcode_control_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'read_romcode_control_s_axi'
@@ -299,7 +299,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'read_romcode_BUS0_m_axi_reg_slice__parameterized2'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2241 ; free virtual = 5851
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1912 ; free virtual = 5587
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -393,7 +393,7 @@ WARNING: [Synth 8-3332] Sequential element (BUS0_m_axi_U/bus_write/rs_wreq/FSM_s
 WARNING: [Synth 8-3332] Sequential element (BUS0_m_axi_U/bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module read_romcode.
 WARNING: [Synth 8-3332] Sequential element (BUS0_m_axi_U/bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module read_romcode.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2469 ; free virtual = 6082
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1795 ; free virtual = 5477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -414,13 +414,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2373 ; free virtual = 5986
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 2009 ; free virtual = 5691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 3469 ; free virtual = 7082
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1990 ; free virtual = 5672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -441,7 +441,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance inst/BUS0_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 3463 ; free virtual = 7076
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1975 ; free virtual = 5657
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -459,37 +459,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2062 ; free virtual = 5675
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1898 ; free virtual = 5580
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2062 ; free virtual = 5675
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1898 ; free virtual = 5580
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2057 ; free virtual = 5670
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1897 ; free virtual = 5579
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2056 ; free virtual = 5668
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1897 ; free virtual = 5579
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2051 ; free virtual = 5664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1896 ; free virtual = 5578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2051 ; free virtual = 5664
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1896 ; free virtual = 5578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -537,18 +537,18 @@ Report Cell Usage:
 |11    |FDSE     |     3|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.086 ; gain = 16.008 ; free physical = 2051 ; free virtual = 5664
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.090 ; gain = 16.008 ; free physical = 1896 ; free virtual = 5578
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2918.086 ; gain = 0.000 ; free physical = 2070 ; free virtual = 5683
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.094 ; gain = 16.008 ; free physical = 2068 ; free virtual = 5681
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2918.090 ; gain = 0.000 ; free physical = 1951 ; free virtual = 5633
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2918.098 ; gain = 16.008 ; free physical = 1951 ; free virtual = 5633
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2918.094 ; gain = 0.000 ; free physical = 2149 ; free virtual = 5762
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2918.098 ; gain = 0.000 ; free physical = 2029 ; free virtual = 5711
 INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.094 ; gain = 0.000 ; free physical = 2102 ; free virtual = 5715
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2918.098 ; gain = 0.000 ; free physical = 1987 ; free virtual = 5669
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -556,10 +556,10 @@ Synth Design complete, checksum: 43c8d65c
 INFO: [Common 17-83] Releasing license: Synthesis
 100 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2918.094 ; gain = 16.016 ; free physical = 3337 ; free virtual = 6950
-INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/design_1_read_romcode_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2918.098 ; gain = 16.016 ; free physical = 2191 ; free virtual = 5873
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/design_1_read_romcode_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_read_romcode_0_0, cache-ID = 18bac0d5df12827e
 INFO: [Coretcl 2-1174] Renamed 18 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/design_1_read_romcode_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_read_romcode_0_0_synth_1/design_1_read_romcode_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_read_romcode_0_0_utilization_synth.rpt -pb design_1_read_romcode_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 03:09:38 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  1 23:06:43 2024...

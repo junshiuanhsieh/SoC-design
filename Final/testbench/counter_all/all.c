@@ -1,3 +1,5 @@
+
+
 #include "all.h"
 #include <defs.h>
 #include <stdint.h>
@@ -63,7 +65,6 @@ int* __attribute__ ( ( section ( ".mprjram" ) ) ) all(){
 	return FIR_OUT;
 }
 
-
 void __attribute__ ( ( section ( ".mprjram" ) ) ) check_ans(){
 
 	reg_mprj_datal = 0xAB500000;
@@ -114,28 +115,7 @@ void __attribute__ ( ( section ( ".mprjram" ) ) ) check_ans(){
 	
 }
 
-/*
-void __attribute__ ( ( section ( ".mprjram" ) ) ) check_ans(){
 
-	reg_mprj_datal = 0xAB500000;
-	for(int i = 0; i < 11; i++){
-	    reg_mprj_datal = FIR_OUT[i] << 16;
-	}
-	
-	reg_mprj_datal = 0xAB600000;
-	
-	for(int i = 0; i < 16; i++){
-	    reg_mprj_datal = MM_OUT[i] << 16;
-	}
 
-	reg_mprj_datal = 0xAB700000;
-	
-	for(int i = 0; i < 10; i++){
-	    reg_mprj_datal = QS_OUT[i] << 16;
-	}
-	
-	
-}
-*/
 
 		

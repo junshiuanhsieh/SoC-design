@@ -257,7 +257,7 @@ module counter_la_all_tb;
 
 		wait(checkbits == 16'hAB51);
 		$display("LA Test 2 passed");
-		#100;
+		#10000;
 		//$finish;
 	end
 	
@@ -267,7 +267,7 @@ module counter_la_all_tb;
 		send_data_1;
 		#500000;
 		send_data_2;
-		#4000000;
+		#6000000;
 		
 		$finish;
 	end

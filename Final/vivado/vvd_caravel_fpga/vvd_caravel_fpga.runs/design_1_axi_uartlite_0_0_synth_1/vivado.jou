@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Thu Dec  7 03:08:09 2023
-# Process ID: 13436
-# Current directory: /home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_axi_uartlite_0_0_synth_1
+# Start of session at: Mon Jan  1 23:04:31 2024
+# Process ID: 29850
+# Current directory: /home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_axi_uartlite_0_0_synth_1
 # Command line: vivado -log design_1_axi_uartlite_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_uartlite_0_0.tcl
-# Log file: /home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_axi_uartlite_0_0_synth_1/design_1_axi_uartlite_0_0.vds
-# Journal file: /home/ubuntu/SoC/lab6/Lab6/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_axi_uartlite_0_0_synth_1/vivado.jou
-# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2112.002 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+# Log file: /home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_axi_uartlite_0_0_synth_1/design_1_axi_uartlite_0_0.vds
+# Journal file: /home/ubuntu/SoC/Final/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_axi_uartlite_0_0_synth_1/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2112.004 MHz, CPU Physical cores: 2, Host memory: 10425 MB
 #-----------------------------------------------------------
 source design_1_axi_uartlite_0_0.tcl -notrace

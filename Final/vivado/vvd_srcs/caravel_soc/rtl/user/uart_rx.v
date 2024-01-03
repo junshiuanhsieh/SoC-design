@@ -95,10 +95,7 @@ module uart_receive (
         WAIT_READ: begin
           irq <= 1'b0;
           busy <= 1'b0;
-          if(rx_finish)
-            state <= WAIT;
-          else
-            state <= WAIT_READ;
+          state <= WAIT;
         end
         FRAME_ERR:begin
             state <= WAIT;
