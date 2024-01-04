@@ -267,7 +267,7 @@ module counter_la_all_tb;
 		send_data_1;
 		#500000;
 		send_data_2;
-		#6000000;
+		#3000000;
 		
 		$finish;
 	end

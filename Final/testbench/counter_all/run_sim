@@ -1,6 +1,6 @@
 rm -f counter_all.hex
 
-riscv32-unknown-elf-gcc -Wl,--no-warn-rwx-segments -g \
+riscv32-unknown-elf-gcc -Wl,--no-warn-rwx-segments -g -O3\
 	--save-temps \
 	-Xlinker -Map=output.map \
 	-I../../firmware \

@@ -12,16 +12,22 @@ int FIR_OUT[N];
 #define _MATMUL_H
 
 #define MM_SIZE 4
-	int MM_IN1[MM_SIZE*MM_SIZE] = {0, 1, 2, 3,
+	int MM_IN1[MM_SIZE*MM_SIZE*2] = {0, 1, 2, 3,
 				  0, 1, 2, 3,
 				  0, 1, 2, 3,
 				  0, 1, 2, 3,
+				  1, 2, 3, 4,
+				  5, 6, 7, 8,
+				  9, 10, 11, 12,
+				  13, 14, 15, 16,
 	};
+	/*
 	int MM_IN2[MM_SIZE*MM_SIZE] = {1, 2, 3, 4,
 				  5, 6, 7, 8,
 				  9, 10, 11, 12,
 				  13, 14, 15, 16,
 	};
+	*/
 	int MM_OUT[MM_SIZE*MM_SIZE];
 #endif
 
